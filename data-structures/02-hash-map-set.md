@@ -8,6 +8,10 @@ O(1) average lookup, insert, and membership. It is also why the guarantee is
 medium interview problems ("two sum", "group anagrams", "longest substring without
 repeats") are a hash map wearing a costume.
 
+![A hash map giving O(1) average lookup via a complement check](../assets/hashing.svg)
+
+*O(1) average lookup is why the unsorted two-sum is a one-pass hash-map problem.*
+
 ## What it is
 
 A hash set stores a collection of distinct elements with fast membership testing. A

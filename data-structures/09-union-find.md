@@ -7,6 +7,10 @@ two sets). With its two standard optimizations it does both in near-constant
 amortized time, which makes it the right tool for connectivity that grows as edges
 arrive, counting connected components, and detecting a cycle in an undirected graph.
 
+![A disjoint-set forest with two trees and their roots](../assets/union-find.svg)
+
+*A disjoint-set forest: find follows parents to the root; two nodes are connected iff they share a root.*
+
 ## What it is
 
 The structure is a **forest of trees**, one tree per set, where each element points

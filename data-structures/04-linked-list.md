@@ -8,6 +8,10 @@ delete anywhere in the list, provided you already hold the node. Almost every
 linked-list interview problem is really about pointer discipline: not losing the
 rest of the list when you rewire a link.
 
+![A singly linked list with fast and slow pointers](../assets/linked-list.svg)
+
+*A singly linked list. Fast and slow pointers find the middle or detect a cycle.*
+
 ## What it is
 
 A **singly linked list** is a chain of nodes. Each node holds a value and a

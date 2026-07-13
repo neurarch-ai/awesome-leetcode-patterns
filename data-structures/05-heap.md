@@ -8,6 +8,10 @@ tangle of pointers, it is a plain array that you read as a tree. Understanding
 that array-as-tree layout is what makes the O(log n) and O(n) costs obvious
 instead of magic.
 
+![A min-heap as a binary tree and its array layout](../assets/heap.svg)
+
+*A min-heap stored as an array: node i has children at 2i+1 and 2i+2.*
+
 ## What it is
 
 A binary heap is a **complete binary tree** stored in an array. "Complete" means

@@ -8,6 +8,10 @@ structure with O(log n) search, insert, and delete, as long as it stays balanced
 The recurring theme of this file: every BST cost is O(height), and whether the
 height is O(log n) or O(n) is entirely a question of balance.
 
+![A binary search tree showing the ordering invariant](../assets/bst.svg)
+
+*A BST: left subtree less than node less than right subtree, so an inorder walk is sorted.*
+
 ## What it is
 
 **Tree terminology**, because the interview vocabulary is precise:

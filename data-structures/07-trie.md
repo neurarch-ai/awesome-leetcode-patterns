@@ -7,6 +7,10 @@ prefix questions from O(number of words) into O(length of the query). If you hav
 ever wanted autocomplete, a dictionary matcher, or "does any word start with this",
 the trie is the structure that makes it cheap.
 
+![A trie storing the words cat, car, dog with a shared prefix](../assets/trie.svg)
+
+*A trie stores shared prefixes once, so a prefix query is O(length) regardless of dictionary size.*
+
 ## What it is
 
 A trie stores a set of strings as a rooted tree. Every node holds a map from a

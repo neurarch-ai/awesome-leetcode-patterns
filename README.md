@@ -17,6 +17,11 @@ Each pattern is a self-contained walkthrough: how to spot it, the core idea, a
 clean code template, complexity, the canonical problems that drill it, the
 variations, and the mistakes that cost people the offer.
 
+![Two pointers converging on a sorted array](assets/two-pointers.svg)
+
+*Every one of the 30 patterns comes with a figure like this, plus a memorizable
+code template annotated with its time and space complexity.*
+
 ---
 
 ## How to use this repo
@@ -138,16 +143,7 @@ mode you move between.*
 The families build on each other. This is the dependency order to learn them in:
 the arrows mean "the earlier family is a prerequisite for the later one".
 
-```mermaid
-graph TD
-    F["Foundations: hashing, two pointers,<br/>sliding window, prefix sum"] --> S["Search and sort: binary search,<br/>sorting, intervals, top-k, heap"]
-    F --> L["Linear structures:<br/>linked lists, stacks"]
-    L --> TR["Trees: DFS, BFS, BST, trie"]
-    TR --> G["Graphs: traversal, topological<br/>sort, union-find, shortest path"]
-    S --> D["Search over decisions:<br/>backtracking, dynamic programming"]
-    G --> D
-    D --> A["Advanced: segment tree and Fenwick,<br/>state-machine DP"]
-```
+![The pattern families and their prerequisite order](assets/pattern-map.svg)
 
 *Foundations unlock everything. Trees generalize into graphs. Backtracking and DP
 are the same decision-tree idea, pruned or memoized. The advanced structures are
