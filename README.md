@@ -194,5 +194,6 @@ in [patterns/README.md](patterns/README.md). Two rules: be honest about
 complexity, and prefer explaining the mechanism over name-dropping the trick.
 
 Before opening a PR, run `python3 scripts/check.py`. It enforces the three house
-invariants (no em or en dashes, every relative link resolves, every Python block
-compiles) and runs in CI on every push.
+invariants: no em or en dashes, every relative link resolves, and every Python
+block compiles. It has no third-party dependencies and is ready to wire into CI as
+a single step.
