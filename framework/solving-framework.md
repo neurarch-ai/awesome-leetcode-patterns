@@ -106,7 +106,8 @@ the interviewer it is correct.
 - **Trace your hand example** through the code, line by line. This catches most
   bugs.
 - **Run the edge cases** from step 1: empty, single element, all duplicates,
-  the "no answer" case.
+  the "no answer" case. The [edge-case checklist](../edge-cases.md) is the full
+  list interviewers probe for, per pattern.
 - **State the final complexity**, time and space, and justify it. If it is not
   optimal, say so and say what the optimal would take.
 - **Mention one improvement** you would make with more time (better space,

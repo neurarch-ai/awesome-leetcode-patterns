@@ -164,6 +164,9 @@ alongside them:
 - **[Curated problem lists](resources.md)** - Grind 75, Blind 75, and NeetCode
   150, each mapped back to the patterns here, plus a study routine and external
   cheat sheets worth bookmarking.
+- **[Edge-case checklist](edge-cases.md)** - the empty, single, duplicate,
+  negative, and overflow cases interviewers hunt for, as a checklist to run before
+  and after you code. More offers are lost here than to the wrong pattern.
 
 ---
 
