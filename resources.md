@@ -77,8 +77,9 @@ Deep single-topic references that go further than a pattern file can:
   [LeetCode discuss, "Powerful Ultimate Binary Search Template"](https://leetcode.com/discuss/general-discussion/786126/python-powerful-ultimate-binary-search-template-solved-many-problems).
 - **Sliding window**, one template for most substring problems:
   [LeetCode discuss, "Sliding Window Template"](https://leetcode.com/discuss/general-discussion/657507/sliding-window-for-beginners-problems-template-sliding-window-1d-array).
-- **Monotonic stack**, a summary of the family:
-  [LeetCode discuss, "Monotonic Stack"](https://leetcode.com/discuss/general-discussion/index).
+- **Monotonic stack**, the family and its video walkthroughs:
+  [NeetCode practice (Stack section)](https://neetcode.io/practice), alongside our
+  own [pattern 11](patterns/11-stacks.md).
 - **Backtracking**, a single template that covers subsets, permutations, and
   combinations:
   [LeetCode discuss, "A general approach to backtracking questions"](https://leetcode.com/problems/permutations/solutions/18239/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning/).
