@@ -34,7 +34,21 @@ subtree aggregates, use [tree DFS](12-tree-dfs.md) instead.
 ## The idea
 
 BFS uses a FIFO queue. Seed it with the root, then repeatedly pop a node and push
-its children. To recover level boundaries (which a flat queue loses), take a
+its children.
+
+```mermaid
+graph TD
+    A["1"] --> B["2"]
+    A --> C["3"]
+    B --> D["4"]
+    B --> E["5"]
+    C --> F["6"]
+    C --> G["7"]
+```
+
+*Level 0: [1]. Level 1: [2, 3]. Level 2: [4, 5, 6, 7]. BFS drains one level per outer loop iteration.*
+
+To recover level boundaries (which a flat queue loses), take a
 **snapshot of the current queue length** at the top of each outer loop: that count
 is exactly the number of nodes on the current level, so an inner loop of that many
 pops drains precisely one level.

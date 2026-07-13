@@ -12,6 +12,17 @@ in (breadth vs depth) and how you represent neighbors (an adjacency list vs the
 four or eight cells around a grid square). Get the visited-set discipline right and
 most "medium" graph problems collapse into one of two templates.
 
+```mermaid
+graph LR
+    A["A"] --- B["B"]
+    A --- C["C"]
+    B --- C
+    D["D"] --- E["E"]
+    F["F"]
+```
+
+*Three connected components: {A, B, C}, {D, E}, and the isolated node {F}. One traversal per unvisited node counts them.*
+
 ## The signal
 
 Reach for a plain traversal (BFS or DFS) when you see:

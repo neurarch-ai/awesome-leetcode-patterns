@@ -13,6 +13,15 @@ subsequences, not contiguous windows. The recurring move is a two-index grid:
 transition asks whether the current pair of characters matches. Master LCS and
 edit distance and most of the family falls out.
 
+```mermaid
+graph TD
+    D["dp[i-1][j-1]"] --> C["dp[i][j]"]
+    U["dp[i-1][j]"] --> C
+    L["dp[i][j-1]"] --> C
+```
+
+*Two-string grid: a cell reads its diagonal (match extends it) plus the up and left neighbors (mismatch takes the best).*
+
 ## The signal
 
 Reach for subsequence/string DP when you see:

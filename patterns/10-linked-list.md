@@ -11,6 +11,15 @@ is O(1) and needs no shifting. The whole pattern is about walking with one or tw
 pointers and rewiring safely, and two small tools (a dummy head and two pointers
 at different speeds) cover almost every list problem you will see.
 
+```mermaid
+graph LR
+    S["slow"] -.-> A
+    F["fast"] -.-> A
+    A["1"] --> B["2"] --> C["3"] --> N["None"]
+```
+
+*Walk node by node. Fast and slow pointers start together, then fast moves two steps for every one of slow.*
+
 ## The signal
 
 Reach for these techniques when you see:

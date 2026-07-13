@@ -32,7 +32,21 @@ If the tree is *not* a BST, none of this applies and you fall back to generic
 
 ## The idea
 
-The BST invariant is recursive: it must hold at *every* node, not just locally. A
+The BST invariant is recursive: it must hold at *every* node, not just locally.
+
+```mermaid
+graph TD
+    A["8"] --> B["3"]
+    A --> C["10"]
+    B --> D["1"]
+    B --> E["6"]
+    C --> F["9"]
+    C --> G["14"]
+```
+
+*For every node, left subtree less than node less than right subtree. Root 8: left keys (3, 1, 6) are all below 8, right keys (10, 9, 14) are all above. Inorder walk yields sorted order: 1, 3, 6, 8, 9, 10, 14.*
+
+A
 node whose immediate children obey `left < node < right` can still violate the
 invariant if a deep-left descendant exceeds the node. That is why validation uses
 **recursive bounds**: each node must lie strictly inside an open interval `(low,

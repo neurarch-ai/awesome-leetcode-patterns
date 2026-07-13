@@ -137,6 +137,30 @@ Same skeleton solves ship-packages-in-D-days (`feasible(cap)` = days needed with
 that capacity `<= D`, search `lo = max(weights)`, `hi = sum(weights)`) and split
 array largest sum (`feasible(cap)` = number of greedy chunks `<= k`).
 
+## One template to rule them all
+
+The insight behind the widely-cited "powerful ultimate binary search template" is
+that **every** binary search, including the plain sorted-array search, is a special
+case of "find the smallest `k` such that `condition(k)` is True". The canonical
+`binary_search` above is just `min_feasible` with `condition(mid)` defined as
+`a[mid] >= target`. Once you see that, you can throw away the three separate
+templates and carry one, plus a three-line recipe:
+
+1. **Define `condition(k)`** so the answer space reads `False...False True...True`.
+   This is the only creative step. For a sorted-array lookup it is `a[k] >= target`;
+   for Koko it is `hours(k) <= h`; for "minimum days to make m bouquets" it is
+   `bouquets(k) >= m`.
+2. **Set the boundaries** `[lo, hi]` wide enough to contain the answer. Use the
+   value range for the answer variant (`1` to `max(piles)`), or `0` to `len(a)` for
+   an index.
+3. **Return `lo`** after the `while lo < hi` loop with the `hi = mid` /
+   `lo = mid + 1` split. It lands on the first True.
+
+The whole method reduces to "what is the monotone yes/no question, and what are its
+bounds". If you can state those two things, the loop is always the same five lines.
+Reach for the specialized `lower_bound` and `upper_bound` above only when a sorted
+array makes the `condition` obvious; for everything else, think in `condition(k)`.
+
 ## Variations
 
 - **Search insert position.** Exactly `lower_bound`: return where the target is or

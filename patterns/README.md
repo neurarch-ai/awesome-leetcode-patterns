@@ -64,6 +64,9 @@ once you have read one you know how to read the rest:
 - [29 - Segment tree and Fenwick (BIT)](29-segment-tree-fenwick.md)
 - [30 - State-machine DP (stock series)](30-state-machine-dp.md)
 
+**Deep dives**
+- [Dynamic programming: the full sub-pattern map](dp-patterns.md) - the eleven DP shapes above and below 21-23 and 30, as a recognition index
+
 ## Contributing a pattern
 
 Follow the seven-section shape above. Rules:

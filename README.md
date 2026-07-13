@@ -167,6 +167,13 @@ alongside them:
 - **[Edge-case checklist](edge-cases.md)** - the empty, single, duplicate,
   negative, and overflow cases interviewers hunt for, as a checklist to run before
   and after you code. More offers are lost here than to the wrong pattern.
+- **[Worked-example walkthroughs](walkthroughs/README.md)** - seven canonical
+  problems solved end to end with the six-step framework, so you can watch a
+  pattern get picked and applied, not just read the finished code.
+- **[DP sub-pattern map](patterns/dp-patterns.md)** - the eleven recurring shapes
+  of dynamic programming (linear, knapsack, two-sequence, grid, interval, bitmask,
+  state-machine, tree, digit, probability), each with its state and transition, so
+  you can name the shape and get the recurrence.
 
 ---
 

@@ -14,6 +14,17 @@ alpha is the inverse Ackermann function, effectively a small constant. It is the
 right tool whenever connectivity is built up incrementally, where relaunching a
 traversal per query would be wasteful.
 
+```mermaid
+graph TD
+    B["B"] --> A["A"]
+    C["C"] --> A
+    E["E"] --> D["D"]
+    G["G"] --> F["F"]
+    H["H"] --> F
+```
+
+*A disjoint-set forest of three trees. Each node points at its parent up to a root (A, D, F); two nodes share a set when they share a root.*
+
 ## The signal
 
 Reach for union-find when you see:

@@ -13,6 +13,17 @@ Negative edges, or a hard cap on the number of edges used: Bellman-Ford. Reading
 the weight structure off the problem statement is the whole skill; the code for each
 is short once you know which one you need.
 
+```mermaid
+graph LR
+    A["A"] -->|"4"| B["B"]
+    A -->|"1"| C["C"]
+    C -->|"2"| B
+    B -->|"5"| D["D"]
+    C -->|"8"| D
+```
+
+*A weighted directed graph. The shortest path from A to D is A, C, B, D at cost 1 + 2 + 5 = 8, cheaper than the direct A to B edge of weight 4.*
+
 ## The signal
 
 Reach for a shortest-path algorithm when the problem asks to **minimize a cost**
