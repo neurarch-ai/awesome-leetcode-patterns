@@ -32,6 +32,7 @@ Each file follows the same shape:
 | 07 | [Trie (prefix tree)](07-trie.md) | Search by prefix in O(length), not O(number of words) |
 | 08 | [Graph](08-graph.md) | Model arbitrary relationships; list vs matrix tradeoff |
 | 09 | [Union-find (disjoint set)](09-union-find.md) | Near O(1) "are these connected" and "merge these groups" |
+| 10 | [Sorted container (bisect, SortedList)](10-sorted-container.md) | O(log n) order statistics and range counts on changing data |
 
 ## Which structure when
 
@@ -46,7 +47,9 @@ The recognition table, from the problem to the structure that makes it cheap:
 | Process first-in-first-out (BFS, scheduling) | Queue / deque | O(1) enqueue and dequeue |
 | Insert or delete at both ends | Deque | O(1) both ends, unlike a list |
 | Repeatedly pull the smallest or largest | Heap | O(1) peek, O(log n) pop |
-| Keep data sorted with fast insert and delete | Balanced BST (or sorted list) | O(log n) ordered ops |
+| Keep data sorted with fast insert and delete | Balanced BST or [sorted container](10-sorted-container.md) | O(log n) ordered ops |
+| Ask "kth smallest" or "how many in range" as data changes | [Sorted container](10-sorted-container.md) (bisect, SortedList) | O(log n) order statistics |
+| Range aggregate (sum, min) with updates | [Fenwick or segment tree](../patterns/29-segment-tree-fenwick.md) | O(log n) query and update |
 | Search or autocomplete by prefix | Trie | O(prefix length), shares prefixes |
 | Model connections, find paths | Graph | edges are the relationships |
 | Track connectivity as edges are added | Union-find | near O(1) union and find |

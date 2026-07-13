@@ -41,12 +41,13 @@ file that explains it:
 | Backtracking | [20 backtracking](patterns/20-backtracking.md) |
 | Graphs | [16 graph traversal](patterns/16-graph-traversal.md), [17 topological sort](patterns/17-topological-sort.md), [19 shortest path](patterns/19-shortest-path.md) |
 | Advanced Graphs | [18 union-find](patterns/18-union-find.md), [19 shortest path](patterns/19-shortest-path.md) |
-| 1-D Dynamic Programming | [21 DP linear and knapsack](patterns/21-dp-linear-knapsack.md) |
+| 1-D Dynamic Programming | [21 DP linear and knapsack](patterns/21-dp-linear-knapsack.md), [30 state-machine DP](patterns/30-state-machine-dp.md) |
 | 2-D Dynamic Programming | [22 DP strings](patterns/22-dp-strings.md), [23 DP grids and intervals](patterns/23-dp-grids-intervals.md) |
 | Greedy | [25 greedy](patterns/25-greedy.md) |
 | Intervals | [05 intervals](patterns/05-intervals.md) |
 | Math and Geometry | [27 math](patterns/27-math.md) |
 | Bit Manipulation | [26 bit manipulation](patterns/26-bit-manipulation.md) |
+| Advanced (Segment Tree / BIT, range queries) | [29 segment tree and Fenwick](patterns/29-segment-tree-fenwick.md) |
 
 Two of our families do not have a dedicated list section but show up throughout:
 [08 sorting](patterns/08-sorting.md) (a prerequisite for intervals, greedy, and

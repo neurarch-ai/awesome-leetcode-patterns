@@ -43,6 +43,9 @@ check your guess here and read the linked pattern to fill the gaps.
 | Single number (136), sum of two integers (371), subsets via mask (78) | XOR and bitmask tricks | [26 bit manipulation](patterns/26-bit-manipulation.md) |
 | Count primes (204), pow(x, n) (50), excel column number (171) | Number theory, fast exponentiation | [27 math](patterns/27-math.md) |
 | LRU cache (146), min stack (155), design Twitter (355) | Compose structures to a spec | [28 design](patterns/28-design.md) |
+| Range sum query mutable (307), count of smaller after self (315), reverse pairs (493) | Range query with updates, inversion counting | [29 segment tree / Fenwick](patterns/29-segment-tree-fenwick.md) |
+| Best time to buy and sell stock I-IV (121, 122, 123, 188), cooldown (309), fee (714) | A few modes with fixed transitions | [30 state-machine DP](patterns/30-state-machine-dp.md) |
+| Sliding window median (480), contains duplicate III (220), count of range sum (327) | Dynamic order statistics and range counts | [sorted container](data-structures/10-sorted-container.md) |
 
 ## Problems that combine patterns
 
@@ -87,6 +90,11 @@ one before.
 7. **Rounding out:** [greedy](patterns/25-greedy.md),
    [bit manipulation](patterns/26-bit-manipulation.md),
    [math](patterns/27-math.md), [design](patterns/28-design.md).
+8. **Advanced (harder rounds):** [state-machine DP](patterns/30-state-machine-dp.md),
+   [segment tree and Fenwick](patterns/29-segment-tree-fenwick.md), and the
+   [sorted container](data-structures/10-sorted-container.md) technique. Skip these
+   on a first pass; reach for them when a problem needs range queries with updates
+   or dynamic order statistics.
 
 Do not try to finish a family before starting the next. Interleave: a few problems
 from each, cycling back. Spaced repetition beats blocking.

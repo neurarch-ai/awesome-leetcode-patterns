@@ -8,6 +8,56 @@ Recognition is probabilistic, not a lookup. A cue points at a likely pattern; yo
 still confirm by checking the mechanism fits. But these cues are right often
 enough to be where you start.
 
+## The tells (memorize these)
+
+The fastest recognition drill: a one-line "if you see X, think Y". Learn these cold
+and most problems announce their pattern in the first sentence.
+
+- If the input is **sorted**, think [binary search](patterns/07-binary-search.md)
+  or [two pointers](patterns/01-two-pointers.md).
+- If you need **O(1) lookup or "have I seen this"**, think a
+  [hash map or set](patterns/04-hashing.md).
+- If it asks for the **longest or shortest contiguous** run under a constraint,
+  think [sliding window](patterns/02-sliding-window.md).
+- If it asks for the **next greater or smaller element**, think a
+  [monotonic stack](patterns/11-stacks.md).
+- If it asks for the **max or min of every window**, think a monotonic deque
+  ([stacks](patterns/11-stacks.md)).
+- If it asks for **range sums or counts on a static array**, think
+  [prefix sum](patterns/03-prefix-sum.md); if the array **also gets updated**,
+  think [Fenwick or segment tree](patterns/29-segment-tree-fenwick.md).
+- If it asks for the **top or bottom k**, think a [heap](patterns/24-heap.md) or
+  [quickselect](patterns/09-top-k-quickselect.md).
+- If it involves a **stream** and you need a running order statistic, think a
+  [heap](patterns/24-heap.md), two heaps, or a
+  [sorted container](data-structures/10-sorted-container.md).
+- If you are given a **linked list**, think [two pointers](patterns/10-linked-list.md)
+  (fast and slow).
+- If you are given a **tree**, think [DFS](patterns/12-tree-dfs.md) or
+  [BFS](patterns/13-tree-bfs.md).
+- If you are given a **graph or a matrix**, think
+  [DFS, BFS](patterns/16-graph-traversal.md), or
+  [union-find](patterns/18-union-find.md).
+- If it asks about **connectivity or grouping**, think
+  [union-find](patterns/18-union-find.md) or DFS.
+- If it asks for an **ordering under dependencies**, think
+  [topological sort](patterns/17-topological-sort.md).
+- If it asks for **all permutations, subsets, or combinations**, think
+  [backtracking](patterns/20-backtracking.md).
+- If it asks for the **number of ways** or a **min/max over choices** with
+  overlapping subproblems, think [dynamic programming](patterns/21-dp-linear-knapsack.md).
+- If at each step you are in **one of a few modes** (holding, cooldown), think
+  [state-machine DP](patterns/30-state-machine-dp.md).
+- If you must solve **in place with O(1) space**, think swapping, or encoding two
+  values in one slot (store `a + b * k`, recover with `% k` and `// k`).
+- If it involves **overlapping intervals**, think
+  [sorting then sweeping](patterns/05-intervals.md).
+- If n is **tiny (<= ~20)**, think [backtracking](patterns/20-backtracking.md) or
+  [bitmask DP](patterns/23-dp-grids-intervals.md); the small bound is permission to
+  be exponential.
+- If nothing else fits: a hash map buys O(1) lookups for O(n) space, and sorting
+  the input buys structure for O(n log n) time. Reach for one and re-examine.
+
 ## By phrase in the problem
 
 | If the problem says... | Reach for | Pattern |
@@ -49,6 +99,9 @@ enough to be where you start.
 | "single number", "count bits", "subset via mask", "XOR of..." | Bit manipulation | [26](patterns/26-bit-manipulation.md) |
 | "gcd / lcm", "is prime", "modular", "count digits", "nCr" | Math | [27](patterns/27-math.md) |
 | "design a structure that supports...", "LRU", "min stack", "iterator" | Design | [28](patterns/28-design.md) |
+| "range sum with updates", "count of smaller", "inversions", "reverse pairs" | Fenwick / segment tree | [29](patterns/29-segment-tree-fenwick.md) |
+| "buy/sell stock", "at most k transactions", "cooldown", "with a fee" | State-machine DP | [30](patterns/30-state-machine-dp.md) |
+| "kth smallest as it changes", "sliding window median", "count in a range dynamically" | Sorted container (bisect / SortedList) | [ds](data-structures/10-sorted-container.md) |
 
 ## By constraint on n
 

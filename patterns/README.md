@@ -60,6 +60,10 @@ once you have read one you know how to read the rest:
 - [27 - Math and number theory](27-math.md)
 - [28 - Design](28-design.md)
 
+**Advanced structures and DP**
+- [29 - Segment tree and Fenwick (BIT)](29-segment-tree-fenwick.md)
+- [30 - State-machine DP (stock series)](30-state-machine-dp.md)
+
 ## Contributing a pattern
 
 Follow the seven-section shape above. Rules:
