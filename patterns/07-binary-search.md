@@ -39,13 +39,7 @@ it until one candidate remains. Each comparison is a **provably safe elimination
 after looking at the middle, you discard the half that cannot contain the answer,
 so `log2(n)` steps suffice.
 
-```mermaid
-graph LR
-  LO["lo"] --> D1["discard this half"]
-  D1 --> MID["mid"]
-  MID --> KEEP["keep and recurse"]
-  KEEP --> HI["hi"]
-```
+![Binary search with lo, mid, hi markers and the discarded half shaded](../assets/binary-search.svg)
 
 *Each step compares against mid and discards the half that cannot hold the answer.*
 

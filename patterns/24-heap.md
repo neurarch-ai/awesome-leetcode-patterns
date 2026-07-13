@@ -41,13 +41,7 @@ inserting or removing only has to sift one element up or down along a single
 root-to-leaf path, which is O(log n). The root is always the minimum, read in
 O(1). You never pay to fully sort, you pay only for the moves you actually make.
 
-```mermaid
-graph TD
-  R["1"] --> C1["3"]
-  R --> C2["2"]
-  C1 --> G1["5"]
-  C1 --> G2["4"]
-```
+![A min-heap shown as a binary tree and its array layout](../assets/heap.svg)
 
 *A min-heap: every parent is less than or equal to its children, so the root is the minimum.*
 

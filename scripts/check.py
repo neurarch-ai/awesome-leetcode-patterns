@@ -19,7 +19,8 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 EM_EN = ("—", "–")            # em dash, en dash
-LINK_RE = re.compile(r"\]\((?!https?://)([^)#]+\.md)(?:#[^)]*)?\)")
+LINK_RE = re.compile(r"(?<!\!)\]\((?!https?://)([^)#]+\.md)(?:#[^)]*)?\)")
+IMG_RE = re.compile(r"!\[[^\]]*\]\((?!https?://)([^)#]+)(?:#[^)]*)?\)")
 PY_RE = re.compile(r"```python\n(.*?)```", re.S)
 
 
@@ -56,6 +57,16 @@ def check_links(failures):
                 failures.append(f"{rel(path)}: broken link -> {m.group(1)}")
 
 
+def check_images(failures):
+    for path in md_files():
+        base = os.path.dirname(path)
+        text = open(path, encoding="utf-8").read()
+        for m in IMG_RE.finditer(text):
+            target = os.path.normpath(os.path.join(base, m.group(1)))
+            if not os.path.isfile(target):
+                failures.append(f"{rel(path)}: broken image -> {m.group(1)}")
+
+
 def check_python(failures):
     for path in md_files():
         text = open(path, encoding="utf-8").read()
@@ -72,6 +83,7 @@ def main():
     failures = []
     check_dashes(failures)
     check_links(failures)
+    check_images(failures)
     check_python(failures)
 
     if failures:

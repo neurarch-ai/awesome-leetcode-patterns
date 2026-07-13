@@ -39,11 +39,7 @@ you discard one side each step, the expected work is `n + n/2 + n/4 + ... = O(n)
 not `O(n log n)`. The worst case is O(n^2) on adversarial pivots, defused by
 picking a random pivot (or median-of-medians for a guaranteed O(n)).
 
-```mermaid
-graph LR
-  LESS["elements < pivot"] --> P["pivot"]
-  P --> GREATER["elements > pivot"]
-```
+![Partition splitting the array into less-than pivot, pivot, greater-than pivot](../assets/partition.svg)
 
 *Partition splits the array around a pivot, then quickselect recurses into one side only.*
 

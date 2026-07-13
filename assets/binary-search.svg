@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="518" height="208" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <g fill="#94a3b8" font-size="12" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="104" y="52">0</text><text x="156" y="52">1</text><text x="208" y="52">2</text><text x="260" y="52">3</text><text x="312" y="52">4</text><text x="364" y="52">5</text><text x="416" y="52">6</text>
+  </g>
+  <g fill="#f1f5f9" stroke="#94a3b8">
+    <rect x="78" y="62" width="52" height="52"/><rect x="130" y="62" width="52" height="52"/><rect x="182" y="62" width="52" height="52"/><rect x="234" y="62" width="52" height="52"/><rect x="286" y="62" width="52" height="52"/><rect x="338" y="62" width="52" height="52"/><rect x="390" y="62" width="52" height="52"/>
+  </g>
+  <g fill="#1e293b" font-size="20" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="104" y="95">1</text><text x="156" y="95">3</text><text x="208" y="95">5</text><text x="260" y="95">7</text><text x="312" y="95">9</text><text x="364" y="95">11</text><text x="416" y="95">13</text>
+  </g>
+  <rect x="78" y="62" width="208" height="52" fill="#cbd5e1" fill-opacity="0.5"/>
+  <text x="182" y="132" fill="#64748b" font-size="12" text-anchor="middle" font-weight="600">discarded half</text>
+  <polygon points="104,122 96,134 112,134" fill="#2563eb"/>
+  <text x="104" y="153" fill="#2563eb" font-size="13" text-anchor="middle" font-weight="600">lo</text>
+  <polygon points="260,122 252,134 268,134" fill="#d97706"/>
+  <text x="260" y="153" fill="#d97706" font-size="13" text-anchor="middle" font-weight="600">mid</text>
+  <polygon points="416,122 408,134 424,134" fill="#dc2626"/>
+  <text x="416" y="153" fill="#dc2626" font-size="13" text-anchor="middle" font-weight="600">hi</text>
+  <text x="260" y="188" fill="#475569" font-size="13" text-anchor="middle">target 11 &gt; a[mid] 7, so discard the left half: lo = mid + 1</text>
+</svg>
