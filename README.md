@@ -133,6 +133,26 @@ mode you move between.*
 
 ---
 
+## How the families fit together
+
+The families build on each other. This is the dependency order to learn them in:
+the arrows mean "the earlier family is a prerequisite for the later one".
+
+```mermaid
+graph TD
+    F["Foundations: hashing, two pointers,<br/>sliding window, prefix sum"] --> S["Search and sort: binary search,<br/>sorting, intervals, top-k, heap"]
+    F --> L["Linear structures:<br/>linked lists, stacks"]
+    L --> TR["Trees: DFS, BFS, BST, trie"]
+    TR --> G["Graphs: traversal, topological<br/>sort, union-find, shortest path"]
+    S --> D["Search over decisions:<br/>backtracking, dynamic programming"]
+    G --> D
+    D --> A["Advanced: segment tree and Fenwick,<br/>state-machine DP"]
+```
+
+*Foundations unlock everything. Trees generalize into graphs. Backtracking and DP
+are the same decision-tree idea, pruned or memoized. The advanced structures are
+last because they assume the rest.*
+
 ## The 20 percent that covers 80 percent
 
 If you have limited time, these ten patterns clear the majority of interview
