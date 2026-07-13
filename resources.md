@@ -18,6 +18,10 @@ Recommended path: **Grind 75 first** (it sequences prerequisites well), then
 **NeetCode 150** for breadth. Blind 75 is a strict subset of NeetCode 150, so if
 you do the 150 you have done the 75.
 
+> Prefer to drill our own patterns on a schedule? The [study plan](study-plan.md)
+> is an eight-week, prerequisite-ordered sequence built from the canonical problems
+> in this repo, in the spirit of Grind 75.
+
 Do not do all three end to end; that is 300 problems with heavy overlap. Do one
 fully, then only the non-overlapping remainder of a second if you have time.
 

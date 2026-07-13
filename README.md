@@ -181,6 +181,10 @@ alongside them:
 - **[Glossary](glossary.md)** - the distinctions that decide which pattern you
   reach for: subarray vs substring vs subsequence, amortized, stable sort,
   optimal substructure, and the graph and tree vocabulary.
+- **[Study plan](study-plan.md)** - an eight-week schedule that sequences the
+  patterns and specific problems in prerequisite order (arrays before trees, trees
+  before graphs, recursion before DP), tunable to your timeline. Start here if you
+  want a plan, not just a map.
 - **[Curated problem lists](resources.md)** - Grind 75, Blind 75, and NeetCode
   150, each mapped back to the patterns here, plus a study routine and external
   cheat sheets worth bookmarking.
