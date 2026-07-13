@@ -66,6 +66,10 @@ def two_sum_sorted(a, target):
     return [-1, -1]
 ```
 
+![Read-write pointers: slow marks the write position, fast scans ahead](../assets/two-pointers-readwrite.svg)
+
+*The read-write variant: both pointers move left to right. Fast reads every element, slow writes only the ones to keep.*
+
 **Read-write (fast-slow in one direction), remove duplicates from a sorted array:**
 
 ```python

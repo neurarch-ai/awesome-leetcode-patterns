@@ -111,6 +111,10 @@ def upper_bound(a, target):
 The count of `target` in a sorted array is `upper_bound(a, t) - lower_bound(a, t)`,
 and "find first and last position" is those two calls minus adjustments.
 
+![The answer space as a monotone False to True predicate line](../assets/binary-search-answer.svg)
+
+*The higher-value variant: there is no array. You binary search a numeric answer against a monotone feasible(x) that flips False to True exactly once.*
+
 **Binary search on the answer (the pattern that wins interviews):** define
 `feasible(x)` so it is monotone, then lower-bound the smallest feasible `x`.
 

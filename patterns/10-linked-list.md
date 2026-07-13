@@ -71,6 +71,10 @@ class ListNode:
         self.next = next
 ```
 
+![In-place reversal with prev, curr, and next pointers](../assets/linked-list-reversal.svg)
+
+*In-place reversal: flip curr.next to point back at prev, then advance all three pointers one step.*
+
 **Iterative reversal (prev / curr / next):**
 
 ```python

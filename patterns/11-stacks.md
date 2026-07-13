@@ -66,6 +66,10 @@ front too: keep indices in decreasing value order, drop the front when it slides
 of the window, drop the back while it is smaller than the incoming value. The front
 is always the current window's max.
 
+![A stack matching brackets: push openers, pop when a closer matches the top](../assets/stacks-parsing.svg)
+
+*The other use of a stack: parsing. Push each opener; a closer must match the top of the stack, or the string is invalid.*
+
 **Stack parsing.** The stack encodes "what am I in the middle of". Push when you
 enter a new scope (an open bracket, an operand, a repeat count) and pop to resolve
 when you close it. For **valid parentheses**, push openers and require each closer to
