@@ -109,7 +109,7 @@ explores. You advance `slow` only when `fast` finds something worth keeping.
 
 | # | Problem | Difficulty | What it drills |
 |---|---------|-----------|----------------|
-| 167 | Two Sum II - Input Array Is Sorted | Easy | The base converging template |
+| 167 | Two Sum II - Input Array Is Sorted | Medium | The base converging template |
 | 125 | Valid Palindrome | Easy | Both ends, skipping characters |
 | 283 | Move Zeroes | Easy | Read-write in-place partition |
 | 26 | Remove Duplicates from Sorted Array | Easy | Slow-fast dedup |
