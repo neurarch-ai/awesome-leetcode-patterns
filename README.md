@@ -138,6 +138,26 @@ you reach for less often but must not fumble when it appears.
 
 ---
 
+## Reference material
+
+The patterns are the core. These pages are the supporting reference you keep open
+alongside them:
+
+- **[Data structures](data-structures/README.md)** - the layer underneath the
+  patterns: what a heap, a trie, or a union-find actually is, what each operation
+  costs, and when to reach for which. Includes a "which structure when" table.
+- **[Complexity cheat sheet](complexity.md)** - the operation costs you must know
+  cold for Python list, deque, set, dict, Counter, heapq, and str, plus the
+  recursion-space caveat.
+- **[Glossary](glossary.md)** - the distinctions that decide which pattern you
+  reach for: subarray vs substring vs subsequence, amortized, stable sort,
+  optimal substructure, and the graph and tree vocabulary.
+- **[Curated problem lists](resources.md)** - Grind 75, Blind 75, and NeetCode
+  150, each mapped back to the patterns here, plus a study routine and external
+  cheat sheets worth bookmarking.
+
+---
+
 ## Sources of the taxonomy
 
 - [LeetCode problem set](https://leetcode.com/problemset/) tags: the topic labels
