@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="518" height="288" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <defs>
+    <marker id="bt-ah" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/></marker>
+  </defs>
+  <g stroke="#94a3b8" stroke-width="1.5" fill="none" marker-end="url(#bt-ah)">
+    <line x1="260" y1="60" x2="136" y2="88"/>
+    <line x1="260" y1="60" x2="382" y2="88"/>
+    <line x1="136" y1="120" x2="75" y2="152"/>
+    <line x1="136" y1="120" x2="198" y2="152"/>
+    <line x1="382" y1="120" x2="321" y2="152"/>
+    <line x1="382" y1="120" x2="444" y2="152"/>
+    <line x1="75" y1="184" x2="45" y2="221"/>
+    <line x1="75" y1="184" x2="106" y2="221"/>
+    <line x1="198" y1="184" x2="168" y2="221"/>
+    <line x1="198" y1="184" x2="229" y2="221"/>
+    <line x1="321" y1="184" x2="291" y2="221"/>
+    <line x1="321" y1="184" x2="352" y2="221"/>
+    <line x1="444" y1="184" x2="414" y2="221"/>
+    <line x1="444" y1="184" x2="475" y2="221"/>
+  </g>
+  <g stroke="#94a3b8">
+    <circle cx="260" cy="44" r="16" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+    <circle cx="136" cy="104" r="16" fill="#f1f5f9"/>
+    <circle cx="382" cy="104" r="16" fill="#f1f5f9"/>
+    <circle cx="75" cy="168" r="16" fill="#f1f5f9"/>
+    <circle cx="198" cy="168" r="16" fill="#f1f5f9"/>
+    <circle cx="321" cy="168" r="16" fill="#f1f5f9"/>
+    <circle cx="444" cy="168" r="16" fill="#f1f5f9"/>
+  </g>
+  <g fill="#f1f5f9" stroke="#94a3b8">
+    <rect x="23" y="224" width="44" height="24" rx="3"/><rect x="84" y="224" width="44" height="24" rx="3"/>
+    <rect x="146" y="224" width="44" height="24" rx="3"/><rect x="207" y="224" width="44" height="24" rx="3"/>
+    <rect x="269" y="224" width="44" height="24" rx="3"/><rect x="330" y="224" width="44" height="24" rx="3"/>
+    <rect x="392" y="224" width="44" height="24" rx="3"/><rect x="453" y="224" width="44" height="24" rx="3"/>
+  </g>
+  <g fill="#1e293b" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="260" y="49" font-size="12">{}</text>
+    <text x="136" y="109" font-size="12">{}</text><text x="382" y="109" font-size="12">{1}</text>
+    <text x="75" y="173" font-size="10">{}</text><text x="198" y="173" font-size="10">{2}</text>
+    <text x="321" y="173" font-size="10">{1}</text><text x="444" y="173" font-size="10">{1,2}</text>
+  </g>
+  <g fill="#1e293b" text-anchor="middle" font-size="9" font-family="ui-monospace,Menlo,monospace">
+    <text x="45" y="240">{}</text><text x="106" y="240">{3}</text>
+    <text x="168" y="240">{2}</text><text x="229" y="240">{2,3}</text>
+    <text x="291" y="240">{1}</text><text x="352" y="240">{1,3}</text>
+    <text x="414" y="240">{1,2}</text><text x="475" y="240">{1,2,3}</text>
+  </g>
+  <g fill="#475569" font-size="11" text-anchor="middle" font-weight="600">
+    <text x="150" y="80">skip</text><text x="368" y="80">take</text>
+  </g>
+  <text x="260" y="276" fill="#475569" font-size="12.5" text-anchor="middle">each element: choose or skip; the leaves are all subsets</text>
+</svg>

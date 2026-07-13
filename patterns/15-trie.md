@@ -42,16 +42,7 @@ children) one node per character; the terminal node gets `is_word = True`. Searc
 walks the same path and checks the flag; `startsWith` walks the path and just needs
 to arrive, flag irrelevant.
 
-```mermaid
-graph TD
-    ROOT["root"] --> C["c"]
-    ROOT --> D["d"]
-    C --> CA["a"]
-    CA --> CAT["t (cat)"]
-    CA --> CAR["r (car)"]
-    D --> DO["o"]
-    DO --> DOG["g (dog)"]
-```
+![Trie storing cat, car, and dog with a shared ca prefix](../assets/trie.svg)
 
 *Words "cat", "car", "dog". The "ca" prefix of cat and car is stored once as a shared spine; a completed word is flagged at its terminal node.*
 

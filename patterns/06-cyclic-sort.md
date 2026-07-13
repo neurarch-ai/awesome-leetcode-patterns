@@ -13,6 +13,10 @@ O(n) time and O(1) space, no hash set required. The sign-marking variant does th
 same trick without even moving elements, by using the sign bit of `a[index]` as a
 visited flag.
 
+![Cyclic sort swapping a value to its home index](../assets/cyclic-sort.svg)
+
+*Put each value at its index; the one slot that stays wrong reveals the missing or duplicate.*
+
 ## The signal
 
 Reach for cyclic sort or index-as-hash when you see:

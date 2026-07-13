@@ -12,6 +12,10 @@ and try the next one. It is the pattern for "enumerate everything" and for
 constraint satisfaction, and its cost is exponential by nature, which is exactly
 why the input sizes are tiny.
 
+![Decision tree for the subsets of 1,2,3](../assets/backtracking.svg)
+
+*Decision tree: at each element you branch skip or take, and the leaves enumerate every subset.*
+
 ## The signal
 
 Reach for backtracking when you see:

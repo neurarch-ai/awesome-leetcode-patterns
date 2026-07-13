@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="518" height="248" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <text x="99" y="82" fill="#1e293b" font-size="13" text-anchor="middle" font-weight="600">hash map</text>
+  <rect x="24" y="94" width="150" height="114" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+  <g fill="#1e293b" font-size="15" font-family="ui-monospace,Menlo,monospace">
+    <text x="46" y="123">A</text><text x="46" y="159">B</text><text x="46" y="195">C</text>
+  </g>
+  <g fill="#94a3b8" font-size="15" font-family="ui-monospace,Menlo,monospace">
+    <text x="74" y="123">&#8594;</text><text x="74" y="195">&#8594;</text>
+  </g>
+  <text x="74" y="159" fill="#2563eb" font-size="15" font-family="ui-monospace,Menlo,monospace">&#8594;</text>
+
+  <text x="248" y="104" fill="#d97706" font-size="12" text-anchor="middle" font-weight="600">most recent</text>
+  <text x="464" y="104" fill="#94a3b8" font-size="12" text-anchor="middle" font-weight="600">least recent</text>
+
+  <rect x="214" y="118" width="68" height="52" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+  <rect x="322" y="118" width="68" height="52" rx="6" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+  <rect x="430" y="118" width="68" height="52" rx="6" fill="#f1f5f9" stroke="#d97706" stroke-width="2"/>
+  <g fill="#1e293b" font-size="16" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="248" y="149">A:1</text><text x="356" y="149">B:2</text><text x="464" y="149">C:3</text>
+  </g>
+
+  <line x1="284" y1="134" x2="316" y2="134" stroke="#94a3b8" stroke-width="1.5"/>
+  <polygon points="322,134 314,130 314,138" fill="#94a3b8"/>
+  <line x1="320" y1="154" x2="288" y2="154" stroke="#94a3b8" stroke-width="1.5"/>
+  <polygon points="282,154 290,150 290,158" fill="#94a3b8"/>
+  <text x="303" y="128" fill="#94a3b8" font-size="10" text-anchor="middle">next</text>
+  <text x="303" y="168" fill="#94a3b8" font-size="10" text-anchor="middle">prev</text>
+
+  <line x1="392" y1="134" x2="424" y2="134" stroke="#94a3b8" stroke-width="1.5"/>
+  <polygon points="430,134 422,130 422,138" fill="#94a3b8"/>
+  <line x1="428" y1="154" x2="396" y2="154" stroke="#94a3b8" stroke-width="1.5"/>
+  <polygon points="390,154 398,150 398,158" fill="#94a3b8"/>
+
+  <polyline points="176,160 260,192 354,174" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="356,170 350,178 360,177" fill="#2563eb"/>
+
+  <text x="260" y="230" fill="#475569" font-size="13" text-anchor="middle">hash map finds the node in O(1); the list orders by recency; evict the tail</text>
+</svg>

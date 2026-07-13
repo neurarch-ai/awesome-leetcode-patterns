@@ -12,6 +12,10 @@ modular arithmetic, exponentiation by squaring, a little combinatorics, and
 digit-by-digit manipulation. Most of the interview risk is not the idea, it is the
 overflow, the sign of zero, and the off-by-one on boundaries.
 
+![Sieve of Eratosthenes over 2 to 31 with primes highlighted](../assets/math.svg)
+
+*The Sieve of Eratosthenes: cross out every multiple of each prime, and the survivors are the primes.*
+
 ## The signal
 
 Reach for a math pattern when you see:

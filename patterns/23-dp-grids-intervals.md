@@ -12,18 +12,7 @@ single index: grid DP (state is a cell), interval DP (state is a range you build
 from the inside out), and bitmask DP (state is a set of used elements). Each has a
 signature evaluation order that is the whole trick.
 
-```mermaid
-graph TD
-    A00["(0,0)"] --> A01["(0,1)"] --> A02["(0,2)"]
-    A00 --> A10["(1,0)"]
-    A01 --> A11["(1,1)"]
-    A02 --> A12["(1,2)"]
-    A10 --> A11 --> A12
-    A10 --> A20["(2,0)"]
-    A11 --> A21["(2,1)"]
-    A12 --> A22["(2,2)"]
-    A20 --> A21 --> A22
-```
+![Grid cell reached from the cell above and the cell to its left](../assets/dp-grids.svg)
 
 *Grid path: each cell is reached from the cell above and the cell to its left (unique paths, min path sum).*
 

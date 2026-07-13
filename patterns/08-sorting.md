@@ -13,6 +13,10 @@ order you need. Python gives you two knobs: a `key=` function (fast, one value p
 element) and `functools.cmp_to_key` (a pairwise comparator, for when order depends
 on how two elements combine).
 
+![Unsorted array becoming sorted](../assets/sorting.svg)
+
+*Many problems get easy once sorted: one O(n log n) pass, then a linear scan.*
+
 ## The signal
 
 Reach for sorting when you see:

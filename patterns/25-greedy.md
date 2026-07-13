@@ -14,6 +14,10 @@ of the pattern, is that "looks best now" is only safe when you can prove the
 locally optimal pick never blocks the global optimum. Greedy without that argument
 is just a guess that happens to pass some tests.
 
+![Interval scheduling picking the maximum set of non-overlapping intervals](../assets/greedy.svg)
+
+*Interval scheduling: sort by finish time, take the earliest-finishing interval, then the next one that starts after it.*
+
 ## The signal
 
 Reach for greedy when you see:

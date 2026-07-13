@@ -13,13 +13,7 @@ older ones in amortized O(1), and **stack parsing**, which uses the stack to tra
 nesting and defer computation until a closing token arrives. Both replace an
 O(n^2) "look back over everything" scan with a single O(n) pass.
 
-```mermaid
-graph TD
-    IN["incoming smaller bar"] --> CHK{"top taller?"}
-    CHK -->|yes| POP["pop: incoming is its next smaller"]
-    POP --> CHK
-    CHK -->|no| PUSH["push incoming index"]
-```
+![Monotonic stack resolving next greater element](../assets/stacks.svg)
 
 *Monotonic stack: each incoming bar pops every taller bar it beats, then pushes itself.*
 

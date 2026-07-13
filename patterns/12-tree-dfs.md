@@ -34,15 +34,7 @@ case is almost always the empty node (`None`), which returns an identity value (
 for heights and sums, `True` for "all-satisfy" checks). Every non-empty node
 recurses left, recurses right, then combines.
 
-```mermaid
-graph TD
-    A["1"] --> B["2"]
-    A --> C["3"]
-    B --> D["4"]
-    B --> E["5"]
-    C --> F["6"]
-    C --> G["7"]
-```
+![Binary tree with preorder and inorder traversals](../assets/tree-dfs.svg)
 
 *Preorder (node, left, right): 1, 2, 4, 5, 3, 6, 7. Inorder (left, node, right): 4, 2, 5, 1, 6, 3, 7. Postorder (left, right, node): 4, 5, 2, 6, 7, 3, 1.*
 

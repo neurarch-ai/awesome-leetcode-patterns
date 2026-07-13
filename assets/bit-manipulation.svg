@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="518" height="298" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="260" y="34" fill="#1e293b" font-size="14" text-anchor="middle" font-weight="600">13 in binary</text>
+
+  <g fill="#94a3b8" font-size="12" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="233" y="54">8</text><text x="279" y="54">4</text><text x="325" y="54">2</text><text x="371" y="54">1</text>
+  </g>
+  <g fill="#f1f5f9" stroke="#94a3b8">
+    <rect x="210" y="62" width="46" height="46"/><rect x="256" y="62" width="46" height="46"/><rect x="302" y="62" width="46" height="46"/><rect x="348" y="62" width="46" height="46"/>
+  </g>
+  <g fill="#1e293b" font-size="21" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="233" y="93">1</text><text x="279" y="93">1</text><text x="325" y="93">0</text><text x="371" y="93">1</text>
+  </g>
+  <text x="185" y="93" fill="#1e293b" font-size="18" text-anchor="end" font-family="ui-monospace,Menlo,monospace">13 =</text>
+
+  <text x="60" y="146" fill="#1e293b" font-size="13" font-weight="600" font-family="ui-monospace,Menlo,monospace">x &amp; (x - 1):</text>
+
+  <g stroke="#94a3b8">
+    <rect x="200" y="156" width="34" height="30" fill="#f1f5f9"/><rect x="234" y="156" width="34" height="30" fill="#f1f5f9"/><rect x="268" y="156" width="34" height="30" fill="#f1f5f9"/><rect x="302" y="156" width="34" height="30" fill="#f1f5f9" stroke="#dc2626" stroke-width="2"/>
+  </g>
+  <g fill="#1e293b" font-size="16" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="217" y="177">1</text><text x="251" y="177">1</text><text x="285" y="177">0</text><text x="319" y="177" fill="#dc2626">1</text>
+  </g>
+  <text x="190" y="177" fill="#475569" font-size="14" text-anchor="end" font-family="ui-monospace,Menlo,monospace">x</text>
+  <text x="352" y="177" fill="#475569" font-size="14" font-family="ui-monospace,Menlo,monospace">= 13</text>
+
+  <g stroke="#94a3b8">
+    <rect x="200" y="200" width="34" height="30" fill="#f1f5f9"/><rect x="234" y="200" width="34" height="30" fill="#f1f5f9"/><rect x="268" y="200" width="34" height="30" fill="#f1f5f9"/><rect x="302" y="200" width="34" height="30" fill="#f1f5f9"/>
+  </g>
+  <g fill="#1e293b" font-size="16" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="217" y="221">1</text><text x="251" y="221">1</text><text x="285" y="221">0</text><text x="319" y="221">0</text>
+  </g>
+  <text x="190" y="221" fill="#475569" font-size="14" text-anchor="end" font-family="ui-monospace,Menlo,monospace">x - 1</text>
+  <text x="352" y="221" fill="#475569" font-size="14" font-family="ui-monospace,Menlo,monospace">= 12</text>
+  <text x="120" y="221" fill="#1e293b" font-size="18" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">&amp;</text>
+
+  <line x1="196" y1="238" x2="356" y2="238" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <g stroke="#94a3b8">
+    <rect x="200" y="246" width="34" height="30" fill="#dbeafe" stroke="#60a5fa"/><rect x="234" y="246" width="34" height="30" fill="#dbeafe" stroke="#60a5fa"/><rect x="268" y="246" width="34" height="30" fill="#dbeafe" stroke="#60a5fa"/><rect x="302" y="246" width="34" height="30" fill="#dbeafe" stroke="#dc2626" stroke-width="2"/>
+  </g>
+  <g fill="#2563eb" font-size="16" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="217" y="267">1</text><text x="251" y="267">1</text><text x="285" y="267">0</text><text x="319" y="267" fill="#dc2626">0</text>
+  </g>
+  <text x="190" y="267" fill="#475569" font-size="14" text-anchor="end" font-family="ui-monospace,Menlo,monospace">x &amp; (x-1)</text>
+  <text x="352" y="267" fill="#475569" font-size="14" font-family="ui-monospace,Menlo,monospace">= 12</text>
+
+  <text x="260" y="294" fill="#475569" font-size="13" text-anchor="middle">x &amp; (x - 1) clears the lowest set bit</text>
+</svg>

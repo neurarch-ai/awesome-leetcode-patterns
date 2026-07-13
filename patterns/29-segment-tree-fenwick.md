@@ -13,6 +13,10 @@ structure that does both in O(log n). Two structures do this: the **Fenwick tree
 min, max, gcd). This is the pattern for "dynamic range queries" and for the
 counting problems (inversions, count-of-smaller) that reduce to them.
 
+![Segment tree over an array storing range sums](../assets/segment-tree.svg)
+
+*A segment tree over [2,1,5,3]: each node stores the sum of its range, so a range query touches only O(log n) nodes.*
+
 ## The signal
 
 Reach for a Fenwick or segment tree when:

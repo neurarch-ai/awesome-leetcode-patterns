@@ -12,16 +12,9 @@ in (breadth vs depth) and how you represent neighbors (an adjacency list vs the
 four or eight cells around a grid square). Get the visited-set discipline right and
 most "medium" graph problems collapse into one of two templates.
 
-```mermaid
-graph LR
-    A["A"] --- B["B"]
-    A --- C["C"]
-    B --- C
-    D["D"] --- E["E"]
-    F["F"]
-```
+![Four by four grid with three separate islands of land cells](../assets/graph-traversal.svg)
 
-*Three connected components: {A, B, C}, {D, E}, and the isolated node {F}. One traversal per unvisited node counts them.*
+*A 4 by 4 grid with three islands of land (blue, green, amber). Each connected group of land is one island; one DFS or BFS per unvisited land cell counts them, three here.*
 
 ## The signal
 

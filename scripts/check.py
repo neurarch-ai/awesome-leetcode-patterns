@@ -37,8 +37,18 @@ def rel(path):
     return os.path.relpath(path, ROOT)
 
 
+def dash_scan_files():
+    yield from md_files()
+    for dirpath, dirnames, filenames in os.walk(ROOT):
+        if ".git" in dirpath:
+            continue
+        for name in filenames:
+            if name.endswith(".svg"):
+                yield os.path.join(dirpath, name)
+
+
 def check_dashes(failures):
-    for path in md_files():
+    for path in dash_scan_files():
         text = open(path, encoding="utf-8").read()
         for lineno, line in enumerate(text.splitlines(), 1):
             for ch in EM_EN:

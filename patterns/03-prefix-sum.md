@@ -10,6 +10,10 @@ subtraction instead of a loop. It trades O(n) setup for O(1) per query, and its
 inverse, the difference array, does the same for batched range updates. Both are
 about moving work out of the query and into a one-time pass.
 
+![Prefix array and range-sum subtraction](../assets/prefix-sum.svg)
+
+*A prefix array P turns any range sum into one subtraction: a[l..r] = P[r+1] - P[l].*
+
 ## The signal
 
 Reach for prefix sum when you see:

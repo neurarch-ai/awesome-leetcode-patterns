@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="518" height="198" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <defs>
+    <marker id="ll-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <polygon points="0,0 6,3 0,6" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <g fill="#f1f5f9" stroke="#94a3b8">
+    <rect x="52" y="66" width="52" height="46"/><rect x="152" y="66" width="52" height="46"/><rect x="252" y="66" width="52" height="46"/><rect x="352" y="66" width="52" height="46"/>
+  </g>
+  <g stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ll-arrow)">
+    <line x1="106" y1="89" x2="146" y2="89"/><line x1="206" y1="89" x2="246" y2="89"/><line x1="306" y1="89" x2="346" y2="89"/><line x1="406" y1="89" x2="444" y2="89"/>
+  </g>
+  <g fill="#1e293b" font-size="21" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="78" y="97">1</text><text x="178" y="97">2</text><text x="278" y="97">3</text><text x="378" y="97">4</text>
+  </g>
+  <text x="470" y="94" fill="#94a3b8" font-size="14" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">null</text>
+  <polygon points="178,120 170,132 186,132" fill="#2563eb"/>
+  <text x="178" y="151" fill="#2563eb" font-size="13" text-anchor="middle" font-weight="600">slow</text>
+  <polygon points="378,120 370,132 386,132" fill="#dc2626"/>
+  <text x="378" y="151" fill="#dc2626" font-size="13" text-anchor="middle" font-weight="600">fast</text>
+  <text x="260" y="184" fill="#475569" font-size="13" text-anchor="middle">slow moves 1 step, fast moves 2; fast finds the middle or a cycle</text>
+</svg>

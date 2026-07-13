@@ -11,6 +11,10 @@ deciding merge-or-not. When the question is "how many overlap at once", the swee
 line reframes each interval as two events (+1 at start, -1 at end) and scans a
 running count. Sorting turns tangled ranges into a decidable left-to-right walk.
 
+![Overlapping intervals merged on a time axis](../assets/intervals.svg)
+
+*Sort by start, then a single pass merges overlapping intervals into disjoint blocks.*
+
 ## The signal
 
 Reach for the interval / sweep-line pattern when you see:

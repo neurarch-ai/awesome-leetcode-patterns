@@ -11,13 +11,7 @@ only if the graph has no cycle, so topo sort doubles as directed cycle detection
 Two algorithms compute it, Kahn's (BFS on in-degree) and DFS with post-order, and
 knowing both means you can pick whichever reads cleaner for the problem.
 
-```mermaid
-graph LR
-    A["A"] --> B["B"]
-    A --> C["C"]
-    B --> D["D"]
-    C --> D
-```
+![Directed acyclic graph with edges A to B, A to C, B to D, C to D](../assets/topological-sort.svg)
 
 *A prerequisite DAG: A unlocks B and C, and both must finish before D. Valid orders include A, B, C, D and A, C, B, D.*
 

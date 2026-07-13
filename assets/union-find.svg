@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="518" height="248" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <g stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)">
+    <line x1="142.5" y1="131.5" x2="162.5" y2="82.5"/>
+    <line x1="197.5" y1="131.5" x2="177.5" y2="82.5"/>
+    <line x1="370" y1="130" x2="370" y2="84"/>
+  </g>
+  <g stroke="#94a3b8">
+    <circle cx="170" cy="64" r="20" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+    <circle cx="370" cy="64" r="20" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+    <circle cx="135" cy="150" r="20" fill="#f1f5f9"/>
+    <circle cx="205" cy="150" r="20" fill="#f1f5f9"/>
+    <circle cx="370" cy="150" r="20" fill="#f1f5f9"/>
+  </g>
+  <g fill="#1e293b" font-size="16" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="170" y="69">R1</text><text x="370" y="69">R2</text>
+    <text x="135" y="156">A</text><text x="205" y="156">B</text><text x="370" y="156">C</text>
+  </g>
+  <g fill="#d97706" font-size="12" text-anchor="middle" font-weight="600">
+    <text x="211" y="52">root</text><text x="411" y="52">root</text>
+  </g>
+  <text x="260" y="204" fill="#475569" font-size="13" text-anchor="middle">find follows parents up to the root</text>
+  <text x="260" y="222" fill="#475569" font-size="13" text-anchor="middle">two nodes are connected iff they share a root</text>
+</svg>

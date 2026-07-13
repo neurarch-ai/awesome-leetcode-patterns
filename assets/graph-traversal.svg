@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 322" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="518" height="320" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <g stroke="#94a3b8">
+    <g fill="#f1f5f9">
+      <rect x="260" y="56" width="52" height="52"/><rect x="312" y="56" width="52" height="52"/>
+      <rect x="156" y="108" width="52" height="52"/><rect x="260" y="108" width="52" height="52"/>
+      <rect x="156" y="160" width="52" height="52"/><rect x="208" y="160" width="52" height="52"/><rect x="260" y="160" width="52" height="52"/>
+      <rect x="208" y="212" width="52" height="52"/><rect x="260" y="212" width="52" height="52"/><rect x="312" y="212" width="52" height="52"/>
+    </g>
+    <g fill="#93c5fd">
+      <rect x="156" y="56" width="52" height="52"/><rect x="208" y="56" width="52" height="52"/><rect x="208" y="108" width="52" height="52"/>
+    </g>
+    <g fill="#86efac">
+      <rect x="312" y="108" width="52" height="52"/><rect x="312" y="160" width="52" height="52"/>
+    </g>
+    <g fill="#fcd34d">
+      <rect x="156" y="212" width="52" height="52"/>
+    </g>
+  </g>
+  <g fill="#1e293b" font-size="13" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="182" y="87">1</text><text x="234" y="87">1</text><text x="286" y="87">0</text><text x="338" y="87">0</text>
+    <text x="182" y="139">0</text><text x="234" y="139">1</text><text x="286" y="139">0</text><text x="338" y="139">1</text>
+    <text x="182" y="191">0</text><text x="234" y="191">0</text><text x="286" y="191">0</text><text x="338" y="191">1</text>
+    <text x="182" y="243">1</text><text x="234" y="243">0</text><text x="286" y="243">0</text><text x="338" y="243">0</text>
+  </g>
+  <text x="260" y="290" fill="#475569" font-size="13" text-anchor="middle">each connected group of land is one island</text>
+  <text x="260" y="308" fill="#475569" font-size="13" text-anchor="middle">flood one at a time with DFS or BFS</text>
+</svg>

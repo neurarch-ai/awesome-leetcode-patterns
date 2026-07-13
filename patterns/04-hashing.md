@@ -11,6 +11,10 @@ many x are there?" from an O(n) scan into an O(1) lookup. It is the workhorse
 behind unsorted-array problems, and it is what you reach for the moment sorting
 is not allowed or not worth its O(n log n).
 
+![Complement lookup against a seen set](../assets/hashing.svg)
+
+*One pass, O(1) lookups: for each x, check whether its complement is already in the seen set.*
+
 ## The signal
 
 Reach for a hash set or map when you see:

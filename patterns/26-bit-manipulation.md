@@ -11,6 +11,10 @@ membership checks, and the ability to enumerate all 2^n subsets by counting. The
 whole pattern is a small vocabulary of idioms: once you know what `x & (x - 1)`
 and `x & -x` do, most problems are one line.
 
+![Clearing the lowest set bit of 13 with x AND x minus 1](../assets/bit-manipulation.svg)
+
+*x & (x - 1) clears the lowest set bit: 13 (1101) becomes 12 (1100).*
+
 ## The signal
 
 Reach for bit manipulation when you see:

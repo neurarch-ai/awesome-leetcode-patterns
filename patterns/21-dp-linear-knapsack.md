@@ -12,11 +12,7 @@ reusing the answers. This first DP file covers the two foundational shapes: 1D
 linear DP over a sequence, and knapsack DP over items with a capacity budget. Get
 the recipe here and the string and grid DP in the next files become variations.
 
-```mermaid
-graph TD
-    P2["dp[i-2]"] --> I["dp[i]"]
-    P1["dp[i-1]"] --> I
-```
+![1D dp array with arrows into dp[i] from dp[i-1] and dp[i-2]](../assets/dp-linear.svg)
 
 *Linear recurrence: dp[i] is built from the two states just behind it (house robber, fibonacci, climbing stairs).*
 

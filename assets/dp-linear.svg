@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 196" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="518" height="194" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <defs>
+    <marker id="dl-g" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#059669"/></marker>
+    <marker id="dl-a" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#d97706"/></marker>
+  </defs>
+  <g fill="#f1f5f9" stroke="#94a3b8">
+    <rect x="64" y="72" width="56" height="46"/><rect x="120" y="72" width="56" height="46"/>
+    <rect x="176" y="72" width="56" height="46"/><rect x="232" y="72" width="56" height="46"/>
+    <rect x="288" y="72" width="56" height="46" fill="#dbeafe" stroke="#60a5fa"/>
+    <rect x="344" y="72" width="56" height="46"/><rect x="400" y="72" width="56" height="46"/>
+  </g>
+  <g fill="#1e293b" font-size="18" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="92" y="101">1</text><text x="148" y="101">2</text><text x="204" y="101">3</text><text x="260" y="101">5</text><text x="316" y="101">8</text><text x="372" y="101">13</text><text x="428" y="101">21</text>
+  </g>
+  <path d="M260,70 Q286,42 308,66" fill="none" stroke="#059669" stroke-width="1.5" marker-end="url(#dl-g)"/>
+  <path d="M204,70 Q262,20 324,64" fill="none" stroke="#d97706" stroke-width="1.5" marker-end="url(#dl-a)"/>
+  <g font-size="12" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">
+    <text x="204" y="138" fill="#d97706">dp[i-2]</text>
+    <text x="260" y="138" fill="#059669">dp[i-1]</text>
+    <text x="316" y="138" fill="#2563eb">dp[i]</text>
+  </g>
+  <text x="260" y="184" fill="#475569" font-size="12.5" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">dp[i] = max(dp[i-1], dp[i-2] + nums[i])</text>
+</svg>

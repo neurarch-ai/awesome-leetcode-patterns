@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 296" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="518" height="294" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <defs>
+    <marker id="ds-a" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#d97706"/></marker>
+    <marker id="ds-g" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#059669"/></marker>
+    <marker id="ds-b" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2563eb"/></marker>
+  </defs>
+  <g fill="#94a3b8" font-size="14" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">
+    <text x="229" y="46">a</text><text x="279" y="46">b</text><text x="329" y="46">d</text>
+    <text x="137" y="135">a</text><text x="137" y="185">b</text><text x="137" y="235">c</text>
+  </g>
+  <g fill="#f1f5f9" stroke="#94a3b8">
+    <rect x="155" y="56" width="48" height="48"/><rect x="205" y="56" width="48" height="48"/><rect x="255" y="56" width="48" height="48"/><rect x="305" y="56" width="48" height="48"/>
+    <rect x="155" y="106" width="48" height="48"/><rect x="205" y="106" width="48" height="48"/><rect x="255" y="106" width="48" height="48"/><rect x="305" y="106" width="48" height="48"/>
+    <rect x="155" y="156" width="48" height="48"/><rect x="205" y="156" width="48" height="48"/>
+    <rect x="255" y="156" width="48" height="48" fill="#dbeafe" stroke="#60a5fa"/>
+    <rect x="305" y="156" width="48" height="48"/>
+    <rect x="155" y="206" width="48" height="48"/><rect x="205" y="206" width="48" height="48"/><rect x="255" y="206" width="48" height="48"/><rect x="305" y="206" width="48" height="48"/>
+  </g>
+  <path d="M229,130 L263,164" fill="none" stroke="#d97706" stroke-width="1.5" marker-end="url(#ds-a)"/>
+  <path d="M279,130 L279,158" fill="none" stroke="#059669" stroke-width="1.5" marker-end="url(#ds-g)"/>
+  <path d="M229,180 L257,180" fill="none" stroke="#2563eb" stroke-width="1.5" marker-end="url(#ds-b)"/>
+  <text x="279" y="196" fill="#1e293b" font-size="12" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">i,j</text>
+  <text x="378" y="98" fill="#94a3b8" font-size="11" font-family="ui-monospace,Menlo,monospace">into dp[i][j]:</text>
+  <g font-size="11" font-family="ui-monospace,Menlo,monospace">
+    <line x1="378" y1="118" x2="396" y2="118" stroke="#d97706" stroke-width="2"/>
+    <text x="402" y="122" fill="#475569">dp[i-1][j-1]</text>
+    <line x1="378" y1="150" x2="396" y2="150" stroke="#059669" stroke-width="2"/>
+    <text x="402" y="154" fill="#475569">dp[i-1][j]</text>
+    <line x1="378" y1="182" x2="396" y2="182" stroke="#2563eb" stroke-width="2"/>
+    <text x="402" y="186" fill="#475569">dp[i][j-1]</text>
+  </g>
+  <text x="260" y="280" fill="#475569" font-size="12" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">match: dp[i-1][j-1]+1; else max(dp[i-1][j], dp[i][j-1])</text>
+</svg>

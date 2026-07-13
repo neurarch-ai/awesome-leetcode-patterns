@@ -13,6 +13,10 @@ lands at O(1) or O(log n). The winning combinations are a small set (hashmap plu
 doubly linked list, hashmap plus array, two heaps, stack plus auxiliary stack), and
 most problems are one of them wearing a costume.
 
+![LRU cache built from a hash map and a doubly linked list](../assets/design.svg)
+
+*An LRU cache: a hash map finds any node in O(1), a doubly linked list keeps them ordered by recency, and the tail is evicted.*
+
 ## The signal
 
 Reach for the design pattern when the problem says:

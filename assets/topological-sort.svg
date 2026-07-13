@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 262" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="518" height="260" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <g stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)">
+    <line x1="139.0" y1="103.8" x2="241.0" y2="70.2"/>
+    <line x1="139.0" y1="116.2" x2="241.0" y2="149.8"/>
+    <line x1="279.0" y1="70.2" x2="381.0" y2="103.8"/>
+    <line x1="279.0" y1="149.8" x2="381.0" y2="116.2"/>
+  </g>
+  <g stroke="#94a3b8">
+    <circle cx="120" cy="110" r="20" fill="#f1f5f9"/>
+    <circle cx="260" cy="64" r="20" fill="#f1f5f9"/>
+    <circle cx="260" cy="156" r="20" fill="#f1f5f9"/>
+    <circle cx="400" cy="110" r="20" fill="#f1f5f9"/>
+  </g>
+  <g fill="#1e293b" font-size="18" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="120" y="116">A</text><text x="260" y="70">B</text><text x="260" y="162">C</text><text x="400" y="116">D</text>
+  </g>
+  <text x="150" y="209" fill="#475569" font-size="13" text-anchor="middle">order:</text>
+  <g fill="#2563eb" font-size="16" text-anchor="middle" font-weight="600" font-family="ui-monospace,Menlo,monospace">
+    <text x="230" y="210">A</text><text x="270" y="210">B</text><text x="310" y="210">C</text><text x="350" y="210">D</text>
+  </g>
+  <text x="260" y="236" fill="#475569" font-size="12" text-anchor="middle">each edge points from prerequisite to dependent; an order respects every edge</text>
+</svg>

@@ -13,6 +13,10 @@ and the legal transitions between them, the recurrence writes itself and the six
 stock problems become one template with small tweaks. Interviewers love this
 family because it looks like six problems and is really one idea.
 
+![Two-state machine with cash and hold, buy and sell transitions](../assets/state-machine-dp.svg)
+
+*The stock DP as a two-state machine: buy moves cash to hold, sell moves hold back to cash.*
+
 ## The signal
 
 Reach for state-machine DP when:
