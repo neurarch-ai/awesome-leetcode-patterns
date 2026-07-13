@@ -56,6 +56,7 @@ at the cost of mutating the input.
 **Cyclic sort (place each value at its home index):**
 
 ```python
+# Time: O(n), Space: O(1)
 def cyclic_sort(a):                 # a is a permutation of 1..n
     i = 0
     while i < len(a):
@@ -70,6 +71,7 @@ def cyclic_sort(a):                 # a is a permutation of 1..n
 **Find the missing number 0..n (missing-number by home index):**
 
 ```python
+# Time: O(n), Space: O(1)
 def missing_number(nums):           # values 0..n with one missing, length n
     i, n = 0, len(nums)
     while i < n:
@@ -87,6 +89,7 @@ def missing_number(nums):           # values 0..n with one missing, length n
 **Sign-marking to find all disappeared numbers (index-as-hash, no swaps):**
 
 ```python
+# Time: O(n), Space: O(1) auxiliary (the returned list is not counted)
 def find_disappeared(nums):         # values 1..n, some appear twice
     for x in nums:
         idx = abs(x) - 1            # magnitude, sign is now a visited flag
@@ -101,6 +104,7 @@ def find_disappeared(nums):         # values 1..n, some appear twice
 **First missing positive (cyclic sort ignoring out-of-range values):**
 
 ```python
+# Time: O(n), Space: O(1)
 def first_missing_positive(nums):
     n = len(nums)
     i = 0

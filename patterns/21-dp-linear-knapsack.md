@@ -64,6 +64,7 @@ trading exponential recomputation for a polynomial-size table.
 **1D linear DP, house robber (skip vs take):**
 
 ```python
+# Time: O(n), Space: O(1)
 def rob(nums):
     prev2, prev1 = 0, 0                    # best up to i-2, i-1
     for x in nums:
@@ -76,6 +77,7 @@ def rob(nums):
 **Kadane, max subarray (the running-best must either extend or restart):**
 
 ```python
+# Time: O(n), Space: O(1)
 def max_subarray(nums):
     best = cur = nums[0]
     for x in nums[1:]:
@@ -87,6 +89,7 @@ def max_subarray(nums):
 **0-1 knapsack / subset sum (each item used at most once):**
 
 ```python
+# Time: O(n * target), Space: O(target)
 def can_partition_to(nums, target):
     # dp[c] = True if some subset sums to exactly c
     dp = [False] * (target + 1)
@@ -100,6 +103,7 @@ def can_partition_to(nums, target):
 **Unbounded knapsack, coin change (each coin reusable, count the min):**
 
 ```python
+# Time: O(amount * len(coins)), Space: O(amount)
 def coin_change(coins, amount):
     INF = float('inf')
     dp = [0] + [INF] * amount              # dp[c] = min coins to make c

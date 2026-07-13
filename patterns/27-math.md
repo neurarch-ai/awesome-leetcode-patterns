@@ -63,11 +63,13 @@ peels the least-significant digit `r` and shifts the rest into `q`.
 **gcd and lcm (Euclid):**
 
 ```python
+# Time: O(log(min(a, b))), Space: O(1)
 def gcd(a, b):
     while b:
         a, b = b, a % b      # invariant: gcd(a, b) unchanged
     return a
 
+# Time: O(log(min(a, b))), Space: O(1)
 def lcm(a, b):
     return a // gcd(a, b) * b # divide before multiply to limit growth
 ```
@@ -75,6 +77,7 @@ def lcm(a, b):
 **Sieve of Eratosthenes, count primes below n:**
 
 ```python
+# Time: O(n log log n), Space: O(n)
 def count_primes(n):
     if n < 3:
         return 0
@@ -92,6 +95,7 @@ def count_primes(n):
 **Fast exponentiation (pow by squaring), with optional modulus:**
 
 ```python
+# Time: O(log n), Space: O(1)
 def fast_pow(x, n, mod=None):
     if n < 0:
         x, n = 1 / x, -n          # for modular pow, use modular inverse instead
@@ -109,6 +113,7 @@ def fast_pow(x, n, mod=None):
 **Digit peel (reverse integer with 32-bit overflow guard):**
 
 ```python
+# Time: O(number of digits), Space: O(1)
 def reverse(x):
     sign = -1 if x < 0 else 1
     x = abs(x)

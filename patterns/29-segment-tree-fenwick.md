@@ -58,16 +58,20 @@ Range min/max, or range updates, reach for the **segment tree**.
 **Fenwick tree (BIT), 1-indexed, prefix sums with point update:**
 
 ```python
+# Space: O(n)
 class BIT:
+    # Time: O(n)
     def __init__(self, n):
         self.n = n
         self.tree = [0] * (n + 1)      # 1-indexed
 
+    # Time: O(log n)
     def update(self, i, delta):        # add delta at position i
         while i <= self.n:
             self.tree[i] += delta
             i += i & (-i)              # move to the next block that covers i
 
+    # Time: O(log n)
     def query(self, i):                # prefix sum of [1..i]
         s = 0
         while i > 0:
@@ -75,6 +79,7 @@ class BIT:
             i -= i & (-i)              # peel off the lowest block
         return s
 
+    # Time: O(log n)
     def range_query(self, l, r):       # sum of [l..r], inclusive
         return self.query(r) - self.query(l - 1)
 ```
@@ -82,7 +87,9 @@ class BIT:
 **Iterative segment tree, point update and range-sum query on [l, r):**
 
 ```python
+# Space: O(n)
 class SegTree:
+    # Time: O(n)
     def __init__(self, data):
         self.n = len(data)
         self.tree = [0] * (2 * self.n)
@@ -91,6 +98,7 @@ class SegTree:
         for i in range(self.n - 1, 0, -1):
             self.tree[i] = self.tree[2 * i] + self.tree[2 * i + 1]
 
+    # Time: O(log n)
     def update(self, i, val):          # set position i to val
         i += self.n
         self.tree[i] = val
@@ -99,6 +107,7 @@ class SegTree:
             self.tree[i] = self.tree[2 * i] + self.tree[2 * i + 1]
             i //= 2
 
+    # Time: O(log n)
     def query(self, l, r):             # sum on the half-open range [l, r)
         res = 0
         l += self.n
@@ -118,6 +127,7 @@ class SegTree:
 **Count of smaller numbers after self, BIT plus coordinate compression:**
 
 ```python
+# Time: O(n log n), Space: O(n)
 def count_smaller(nums):
     rank = {v: i + 1 for i, v in enumerate(sorted(set(nums)))}  # 1-indexed ranks
     bit = BIT(len(rank))

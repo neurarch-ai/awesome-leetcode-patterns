@@ -58,6 +58,7 @@ O(k) space.
 **Unlimited transactions (122), the two-state core:**
 
 ```python
+# Time: O(n), Space: O(1)
 def max_profit_unlimited(prices):
     cash, hold = 0, float('-inf')
     for p in prices:
@@ -69,6 +70,7 @@ def max_profit_unlimited(prices):
 **At most k transactions (188, and 123 with k = 2):**
 
 ```python
+# Time: O(n * k), Space: O(k)
 def max_profit_k(k, prices):
     n = len(prices)
     if n == 0 or k == 0:
@@ -87,6 +89,7 @@ def max_profit_k(k, prices):
 **Cooldown (309), a three-state machine:**
 
 ```python
+# Time: O(n), Space: O(1)
 def max_profit_cooldown(prices):
     hold, sold, rest = float('-inf'), 0, 0
     for p in prices:
@@ -100,6 +103,7 @@ def max_profit_cooldown(prices):
 **Transaction fee (714):** the unlimited core with the fee on the sell edge:
 
 ```python
+# Time: O(n), Space: O(1)
 def max_profit_fee(prices, fee):
     cash, hold = 0, float('-inf')
     for p in prices:

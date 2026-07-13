@@ -76,6 +76,7 @@ subsequences or all edit scripts) to `O(m * n)`, and LIS goes from `O(2^n)` to
 **LIS in O(n^2) (each element extends the best chain ending earlier and smaller):**
 
 ```python
+# Time: O(n^2), Space: O(n)
 def lis_quadratic(nums):
     n = len(nums)
     dp = [1] * n                           # dp[i] = LIS ending exactly at i
@@ -92,6 +93,7 @@ chain):**
 ```python
 from bisect import bisect_left
 
+# Time: O(n log n), Space: O(n)
 def lis_nlogn(nums):
     tails = []
     for x in nums:
@@ -106,6 +108,7 @@ def lis_nlogn(nums):
 **LCS (the two-string grid, match extends the diagonal):**
 
 ```python
+# Time: O(m * n), Space: O(m * n) (compressible to O(min(m, n)))
 def lcs(s, t):
     m, n = len(s), len(t)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
@@ -121,6 +124,7 @@ def lcs(s, t):
 **Edit distance (min insert/delete/replace to turn `s` into `t`):**
 
 ```python
+# Time: O(m * n), Space: O(m * n) (compressible to O(min(m, n)))
 def edit_distance(s, t):
     m, n = len(s), len(t)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
@@ -142,6 +146,7 @@ def edit_distance(s, t):
 **Longest palindromic subsequence (range DP, grow the interval outward):**
 
 ```python
+# Time: O(n^2), Space: O(n^2)
 def longest_palindrome_subseq(s):
     n = len(s)
     dp = [[0] * n for _ in range(n)]

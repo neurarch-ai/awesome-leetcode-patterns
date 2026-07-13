@@ -63,6 +63,7 @@ constant factor low.
 **The universal choose / explore / unchoose skeleton (subsets):**
 
 ```python
+# Time: O(n * 2^n), Space: O(n) (recursion depth plus path, output aside)
 def subsets(nums):
     res = []
     path = []
@@ -85,6 +86,7 @@ and instead track which elements are already used.
 **Permutations (order matters, so use a `used` set instead of `start`):**
 
 ```python
+# Time: O(n * n!), Space: O(n) (recursion depth plus path and used, output aside)
 def permute(nums):
     res = []
     path = []
@@ -110,6 +112,7 @@ def permute(nums):
 **Combination sum (unbounded reuse, prune when the running sum overshoots):**
 
 ```python
+# Time: O(exponential in target/min candidate), Space: O(target / min candidate) recursion depth
 def combination_sum(candidates, target):
     candidates.sort()                      # enables the early break prune
     res = []

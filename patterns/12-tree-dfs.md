@@ -66,12 +66,15 @@ height h, which is O(log n) for a balanced tree and O(n) for a degenerate one.
 **The node definition and the core bottom-up shape:**
 
 ```python
+# Space: O(1)
 class TreeNode:
+    # Time: O(1)
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
+# Time: O(n), Space: O(h)  (h = tree height, the recursion stack)
 def max_depth(root):
     if not root:                       # base case: empty subtree has depth 0
         return 0
@@ -83,6 +86,7 @@ def max_depth(root):
 **Bottom-up with a side answer (diameter and max path sum share this shape):**
 
 ```python
+# Time: O(n), Space: O(h)  (h = tree height, the recursion stack)
 def diameter(root):
     best = 0
     def height(node):
@@ -100,6 +104,7 @@ def diameter(root):
 **Top-down (pass state down), root-to-leaf path sum:**
 
 ```python
+# Time: O(n), Space: O(h)  (h = tree height, the recursion stack)
 def has_path_sum(root, target):
     if not root:
         return False

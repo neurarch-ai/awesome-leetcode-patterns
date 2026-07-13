@@ -61,6 +61,7 @@ factor.
 ```python
 import random
 
+# Time: O(n) average, O(n^2) worst, Space: O(1)
 def kth_largest(nums, k):
     target = len(nums) - k             # k-th largest == this index once sorted
     lo, hi = 0, len(nums) - 1
@@ -73,6 +74,7 @@ def kth_largest(nums, k):
         else:
             hi = p - 1                 # answer is to the left
 
+# Time: O(n), Space: O(1)  (n = hi - lo + 1, the sub-range length)
 def partition(a, lo, hi):
     r = random.randint(lo, hi)         # random pivot defuses O(n^2)
     a[r], a[hi] = a[hi], a[r]
@@ -94,6 +96,7 @@ lower/upper reasoning as binary search, narrowing `[lo, hi]` toward `target`.
 ```python
 import heapq
 
+# Time: O(n log k), Space: O(k)
 def k_largest(stream, k):
     heap = []                          # min-heap of the k largest so far
     for x in stream:
@@ -110,6 +113,7 @@ evicted.
 ```python
 import heapq
 
+# Time: O(n log k), Space: O(k)
 def k_closest(points, k):
     heap = []                          # max-heap via negated distance
     for x, y in points:

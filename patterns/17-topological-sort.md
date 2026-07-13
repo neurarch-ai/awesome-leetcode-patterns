@@ -66,6 +66,7 @@ for other reasons.
 ```python
 from collections import deque
 
+# Time: O(V + E), Space: O(V + E)
 def topo_sort_kahn(num_nodes, edges):        # edges: list of (u, v) meaning u -> v
     adj = [[] for _ in range(num_nodes)]
     indeg = [0] * num_nodes
@@ -89,6 +90,7 @@ def topo_sort_kahn(num_nodes, edges):        # edges: list of (u, v) meaning u -
 **DFS with three-color cycle detection and post-order:**
 
 ```python
+# Time: O(V + E), Space: O(V)
 def topo_sort_dfs(num_nodes, adj):
     WHITE, GRAY, BLACK = 0, 1, 2             # unseen, on stack, done
     color = [WHITE] * num_nodes

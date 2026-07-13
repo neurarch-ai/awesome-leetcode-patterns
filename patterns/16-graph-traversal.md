@@ -70,6 +70,7 @@ edge list, you compute neighbors on the fly.
 **Grid DFS (recursive), number of islands / flood fill:**
 
 ```python
+# Time: O(m * n), Space: O(m * n)
 def num_islands(grid):
     if not grid:
         return 0
@@ -96,6 +97,7 @@ def num_islands(grid):
 ```python
 from collections import deque
 
+# Time: O(V + E), Space: O(V)
 def bfs_shortest(adj, src, dst):
     visited = {src}
     q = deque([(src, 0)])                    # (node, distance)
@@ -115,6 +117,7 @@ def bfs_shortest(adj, src, dst):
 ```python
 from collections import deque
 
+# Time: O(m * n), Space: O(m * n)
 def oranges_rotting(grid):
     rows, cols = len(grid), len(grid[0])
     q = deque()

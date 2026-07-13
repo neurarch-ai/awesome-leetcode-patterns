@@ -74,12 +74,15 @@ would explore full branches before finding the shortest.
 ```python
 from collections import deque
 
+# Space: O(1)
 class TreeNode:
+    # Time: O(1)
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
+# Time: O(n), Space: O(n)
 def level_order(root):
     if not root:
         return []
@@ -102,6 +105,7 @@ def level_order(root):
 **Right-side view (last node of each level):**
 
 ```python
+# Time: O(n), Space: O(n)
 def right_side_view(root):
     if not root:
         return []
@@ -123,6 +127,7 @@ def right_side_view(root):
 **Minimum depth, return early on the first leaf:**
 
 ```python
+# Time: O(n), Space: O(n)
 def min_depth(root):
     if not root:
         return 0

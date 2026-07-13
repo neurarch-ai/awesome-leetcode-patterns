@@ -70,18 +70,22 @@ groups.
 **Reusable DSU class with path compression and union by size:**
 
 ```python
+# Space: O(n)
 class DSU:
+    # Time: O(n)
     def __init__(self, n):
         self.parent = list(range(n))         # each node is its own root
         self.size = [1] * n                  # size of the tree at each root
         self.count = n                       # number of disjoint components
 
+    # Time: O(alpha(n)) amortized
     def find(self, x):
         while self.parent[x] != x:
             self.parent[x] = self.parent[self.parent[x]]   # path halving
             x = self.parent[x]
         return x
 
+    # Time: O(alpha(n)) amortized
     def union(self, x, y):
         rx, ry = self.find(x), self.find(y)
         if rx == ry:
@@ -93,6 +97,7 @@ class DSU:
         self.count -= 1                      # two groups became one
         return True
 
+    # Time: O(alpha(n)) amortized
     def connected(self, x, y):
         return self.find(x) == self.find(y)
 ```
@@ -100,6 +105,7 @@ class DSU:
 **Counting connected components / provinces:**
 
 ```python
+# Time: O(n^2 * alpha(n)), Space: O(n)
 def count_provinces(is_connected):           # n x n adjacency matrix
     n = len(is_connected)
     dsu = DSU(n)
@@ -113,6 +119,7 @@ def count_provinces(is_connected):           # n x n adjacency matrix
 **Detecting a cycle in an undirected graph / finding the redundant edge:**
 
 ```python
+# Time: O(E * alpha(n)), Space: O(E)
 def find_redundant(edges):                   # nodes labeled 1..n
     dsu = DSU(len(edges) + 1)
     for u, v in edges:

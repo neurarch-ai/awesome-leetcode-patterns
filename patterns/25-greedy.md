@@ -67,6 +67,7 @@ value-per-weight is optimal for the fractional version but not the 0/1 version.
 **Sort, then make the locally optimal pick (max non-overlapping intervals):**
 
 ```python
+# Time: O(n log n) (dominated by the sort), Space: O(1) auxiliary
 def max_non_overlapping(intervals):
     intervals.sort(key=lambda iv: iv[1])   # sort by END time
     count = 0
@@ -81,6 +82,7 @@ def max_non_overlapping(intervals):
 **Furthest-reach sweep (jump game I: can you reach the end?):**
 
 ```python
+# Time: O(n), Space: O(1)
 def can_reach_end(nums):
     furthest = 0
     for i, jump in enumerate(nums):
@@ -93,6 +95,7 @@ def can_reach_end(nums):
 **Level-by-level frontier (jump game II: fewest jumps):**
 
 ```python
+# Time: O(n), Space: O(1)
 def min_jumps(nums):
     jumps = 0
     current_end = 0                        # boundary of the current jump's reach
@@ -108,6 +111,7 @@ def min_jumps(nums):
 **One-pass feasibility with a running deficit (gas station):**
 
 ```python
+# Time: O(n), Space: O(1)
 def can_complete_circuit(gas, cost):
     if sum(gas) < sum(cost):
         return -1                          # not enough fuel overall, impossible

@@ -75,15 +75,20 @@ XOR to 1, and higher bits dominate).
 **Standard trie: insert, search, startsWith.**
 
 ```python
+# Space: O(1)
 class TrieNode:
+    # Time: O(1)
     def __init__(self):
         self.children = {}      # char -> TrieNode
         self.is_word = False
 
+# Space: O(total chars * alphabet)
 class Trie:
+    # Time: O(1)
     def __init__(self):
         self.root = TrieNode()
 
+    # Time: O(L) where L = word length
     def insert(self, word):
         node = self.root
         for ch in word:
@@ -92,13 +97,16 @@ class Trie:
             node = node.children[ch]
         node.is_word = True
 
+    # Time: O(L) where L = word length
     def search(self, word):
         node = self._walk(word)
         return node is not None and node.is_word
 
+    # Time: O(L) where L = prefix length
     def startsWith(self, prefix):   # LeetCode 208 requires this exact method name
         return self._walk(prefix) is not None
 
+    # Time: O(L) where L = length of s
     def _walk(self, s):
         node = self.root
         for ch in s:
@@ -111,16 +119,20 @@ class Trie:
 **Wildcard search (`.` matches any letter): DFS over the trie.**
 
 ```python
+# Space: O(total chars * alphabet)
 class WordDictionary:
+    # Time: O(1)
     def __init__(self):
         self.root = TrieNode()
 
+    # Time: O(L) where L = word length
     def add_word(self, word):
         node = self.root
         for ch in word:
             node = node.children.setdefault(ch, TrieNode())
         node.is_word = True
 
+    # Time: O(alphabet^k * L) worst, k = number of wildcards
     def search(self, word):
         def dfs(node, i):
             if i == len(word):
@@ -135,6 +147,7 @@ class WordDictionary:
 **Word Search II: build a trie of the words, DFS the grid pruning by trie.**
 
 ```python
+# Time: O(total chars in words + M * N * 4 * 3^(L - 1)) where L = max word length, Space: O(total chars in words)
 def find_words(board, words):
     root = TrieNode()
     for w in words:                     # build the trie of targets
@@ -170,6 +183,7 @@ def find_words(board, words):
 **Binary trie for maximum XOR of two numbers.**
 
 ```python
+# Time: O(n * 32), Space: O(n * 32)
 def find_maximum_xor(nums, bits=31):
     root = {}
     for x in nums:                      # insert each number's bits, MSB first

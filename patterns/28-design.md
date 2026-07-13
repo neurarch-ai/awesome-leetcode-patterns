@@ -59,17 +59,21 @@ you are about to remove.
 ```python
 from collections import OrderedDict
 
+# Space: O(capacity)
 class LRUCache:
+    # Time: O(1)
     def __init__(self, capacity):
         self.cache = OrderedDict()      # insertion order == recency order
         self.cap = capacity
 
+    # Time: O(1)
     def get(self, key):
         if key not in self.cache:
             return -1
         self.cache.move_to_end(key)     # mark as most recently used
         return self.cache[key]
 
+    # Time: O(1)
     def put(self, key, value):
         if key in self.cache:
             self.cache.move_to_end(key)
@@ -85,26 +89,33 @@ interviewer bans it, build the two structures by hand:
 **LRU cache, explicit hashmap + doubly linked list (what OrderedDict does for you):**
 
 ```python
+# Space: O(1)
 class Node:
     __slots__ = ('key', 'val', 'prev', 'next')
+    # Time: O(1)
     def __init__(self, key=0, val=0):
         self.key, self.val, self.prev, self.next = key, val, None, None
 
+# Space: O(capacity)
 class LRUCache:
+    # Time: O(1)
     def __init__(self, capacity):
         self.cap = capacity
         self.map = {}                       # key -> Node
         self.head, self.tail = Node(), Node()   # sentinels: head<->...<->tail
         self.head.next, self.tail.prev = self.tail, self.head
 
+    # Time: O(1)
     def _remove(self, node):                # unlink in O(1)
         node.prev.next, node.next.prev = node.next, node.prev
 
+    # Time: O(1)
     def _add_front(self, node):             # splice right after head (most recent)
         node.prev, node.next = self.head, self.head.next
         self.head.next.prev = node
         self.head.next = node
 
+    # Time: O(1)
     def get(self, key):
         if key not in self.map:
             return -1
@@ -112,6 +123,7 @@ class LRUCache:
         self._remove(node); self._add_front(node)   # bump to most recent
         return node.val
 
+    # Time: O(1)
     def put(self, key, value):
         if key in self.map:
             self._remove(self.map[key])

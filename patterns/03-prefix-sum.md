@@ -54,12 +54,14 @@ each, and one final O(n) integration materializes the result.
 **1D prefix sum for range queries:**
 
 ```python
+# Time: O(n), Space: O(n)
 def build_prefix(a):
     prefix = [0] * (len(a) + 1)
     for i, x in enumerate(a):
         prefix[i + 1] = prefix[i] + x
     return prefix
 
+# Time: O(1), Space: O(1)
 def range_sum(prefix, i, j):        # sum of a[i..j] inclusive
     return prefix[j + 1] - prefix[i]
 ```
@@ -67,6 +69,7 @@ def range_sum(prefix, i, j):        # sum of a[i..j] inclusive
 **Subarray sum equals k (hash map of prefix counts):**
 
 ```python
+# Time: O(n), Space: O(n)
 def subarray_sum(nums, k):
     from collections import defaultdict
     seen = defaultdict(int)
@@ -83,6 +86,7 @@ def subarray_sum(nums, k):
 **2D prefix sum (integral image), rectangle sum in O(1):**
 
 ```python
+# Time: O(mn), Space: O(mn)
 def build_2d(mat):
     rows, cols = len(mat), len(mat[0])
     p = [[0] * (cols + 1) for _ in range(rows + 1)]
@@ -91,6 +95,7 @@ def build_2d(mat):
             p[r + 1][c + 1] = mat[r][c] + p[r][c + 1] + p[r + 1][c] - p[r][c]
     return p
 
+# Time: O(1), Space: O(1)
 def region_sum(p, r1, c1, r2, c2):  # inclusive corners
     return p[r2 + 1][c2 + 1] - p[r1][c2 + 1] - p[r2 + 1][c1] + p[r1][c1]
 ```
@@ -98,6 +103,7 @@ def region_sum(p, r1, c1, r2, c2):  # inclusive corners
 **Difference array for batched range updates:**
 
 ```python
+# Time: O(n + q), Space: O(n)  (q = number of updates)
 def range_updates(n, updates):      # updates: list of (l, r, v), r inclusive
     diff = [0] * (n + 1)
     for l, r, v in updates:

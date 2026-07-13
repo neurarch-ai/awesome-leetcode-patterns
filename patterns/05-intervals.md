@@ -60,6 +60,7 @@ because the earliest end leaves the most room for the rest.
 **Merge overlapping intervals:**
 
 ```python
+# Time: O(n log n), Space: O(n)
 def merge(intervals):
     intervals.sort(key=lambda iv: iv[0])       # sort by start
     out = []
@@ -74,6 +75,7 @@ def merge(intervals):
 **Insert an interval into a sorted, disjoint list:**
 
 ```python
+# Time: O(n), Space: O(n)
 def insert(intervals, new):
     out = []
     s, e = new
@@ -93,6 +95,7 @@ def insert(intervals, new):
 ```python
 import heapq
 
+# Time: O(n log n), Space: O(n)
 def min_meeting_rooms(intervals):
     intervals.sort(key=lambda iv: iv[0])       # by start
     ends = []                                  # min-heap of end times in use
@@ -107,6 +110,7 @@ def min_meeting_rooms(intervals):
 **Sweep line via +1 / -1 events (general max concurrency):**
 
 ```python
+# Time: O(n log n), Space: O(n)
 def max_concurrent(intervals):
     events = []
     for s, e in intervals:

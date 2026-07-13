@@ -61,6 +61,7 @@ template applies with `feasible(mid)` standing in for `a[mid] >= target`.
 **Canonical bisect on a sorted array (does the target exist, and where):**
 
 ```python
+# Time: O(log n), Space: O(1)
 def binary_search(a, target):
     lo, hi = 0, len(a) - 1          # closed range [lo, hi]
     while lo <= hi:
@@ -79,6 +80,7 @@ no `+1/-1` juggling, no equality branch. This is the workhorse; memorize it and
 derive the rest.
 
 ```python
+# Time: O(log n), Space: O(1)
 def lower_bound(a, target):
     lo, hi = 0, len(a)              # half-open [lo, hi), hi can be len(a)
     while lo < hi:
@@ -94,6 +96,7 @@ def lower_bound(a, target):
 character different from lower bound (`<=` instead of `<`).
 
 ```python
+# Time: O(log n), Space: O(1)
 def upper_bound(a, target):
     lo, hi = 0, len(a)
     while lo < hi:
@@ -112,6 +115,7 @@ and "find first and last position" is those two calls minus adjustments.
 `feasible(x)` so it is monotone, then lower-bound the smallest feasible `x`.
 
 ```python
+# Time: O(log(hi - lo) * cost_of_feasible), Space: O(1)
 def min_feasible(lo, hi, feasible):
     # feasible is monotone: False...False True...True as x increases.
     # returns the smallest x in [lo, hi] with feasible(x) == True
@@ -130,6 +134,7 @@ hours):
 ```python
 import math
 
+# Time: O(n log(max_pile)), Space: O(1)
 def min_eating_speed(piles, h):
     def feasible(speed):
         hours = sum(math.ceil(p / speed) for p in piles)

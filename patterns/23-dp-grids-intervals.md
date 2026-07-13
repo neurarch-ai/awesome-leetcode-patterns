@@ -78,6 +78,7 @@ row, intervals go short to long, bitmasks go by increasing set.
 **Grid path count, unique paths (only right and down moves):**
 
 ```python
+# Time: O(m * n), Space: O(n)
 def unique_paths(m, n):
     dp = [1] * n                           # first row: exactly one way to each cell
     for _ in range(1, m):
@@ -89,6 +90,7 @@ def unique_paths(m, n):
 **Min path sum (each cell adds its cost to the cheaper predecessor):**
 
 ```python
+# Time: O(m * n), Space: O(m * n) (compressible to O(n))
 def min_path_sum(grid):
     m, n = len(grid), len(grid[0])
     dp = [[0] * n for _ in range(m)]
@@ -106,6 +108,7 @@ def min_path_sum(grid):
 **Maximal square (side of the largest all-ones square ending at each cell):**
 
 ```python
+# Time: O(m * n), Space: O(m * n) (compressible to O(n))
 def maximal_square(matrix):
     m, n = len(matrix), len(matrix[0])
     dp = [[0] * (n + 1) for _ in range(m + 1)]
@@ -122,6 +125,7 @@ def maximal_square(matrix):
 **Interval DP, burst balloons ("which balloon in (i, j) do I burst last?"):**
 
 ```python
+# Time: O(n^3), Space: O(n^2)
 def max_coins(nums):
     a = [1] + nums + [1]                   # pad with virtual 1s at both ends
     n = len(a)
@@ -139,6 +143,7 @@ def max_coins(nums):
 **Bitmask DP, TSP-style shortest route visiting all nodes:**
 
 ```python
+# Time: O(n^2 * 2^n), Space: O(n * 2^n)
 def shortest_tour(dist):
     n = len(dist)
     FULL = (1 << n) - 1

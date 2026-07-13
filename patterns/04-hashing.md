@@ -62,6 +62,7 @@ much, hashing wins.
 **Seen-set for membership and dedup:**
 
 ```python
+# Time: O(n), Space: O(n)
 def contains_duplicate(nums):
     seen = set()
     for x in nums:
@@ -74,6 +75,7 @@ def contains_duplicate(nums):
 **Complement map, unsorted two-sum (returns indices):**
 
 ```python
+# Time: O(n), Space: O(n)
 def two_sum(nums, target):
     pos = {}                          # value -> index
     for i, x in enumerate(nums):
@@ -86,6 +88,7 @@ def two_sum(nums, target):
 **Frequency counter, anagram check:**
 
 ```python
+# Time: O(n), Space: O(k) distinct characters (O(1) for a fixed alphabet)
 def is_anagram(s, t):
     from collections import Counter
     return Counter(s) == Counter(t)   # equal multisets of characters
@@ -94,6 +97,7 @@ def is_anagram(s, t):
 **Grouping by a canonical key, group anagrams:**
 
 ```python
+# Time: O(n*k log k), Space: O(n*k)  (n words of length up to k)
 def group_anagrams(words):
     from collections import defaultdict
     groups = defaultdict(list)

@@ -68,12 +68,15 @@ one.
 **Validate a BST with recursive bounds (the correct, deep-safe way):**
 
 ```python
+# Space: O(1)
 class TreeNode:
+    # Time: O(1)
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
+# Time: O(n), Space: O(h), worst O(n)
 def is_valid_bst(root, low=float('-inf'), high=float('inf')):
     if not root:
         return True                              # empty subtree is valid
@@ -86,6 +89,7 @@ def is_valid_bst(root, low=float('-inf'), high=float('inf')):
 **Kth smallest via inorder, stopping early:**
 
 ```python
+# Time: O(h + k), worst O(n), Space: O(h), worst O(n)
 def kth_smallest(root, k):
     stack = []
     node = root
@@ -103,11 +107,13 @@ def kth_smallest(root, k):
 **Search and insert (single-path walks):**
 
 ```python
+# Time: O(h), worst O(n), Space: O(1)
 def search_bst(root, target):
     while root and root.val != target:
         root = root.left if target < root.val else root.right
     return root
 
+# Time: O(h), worst O(n), Space: O(h), worst O(n)
 def insert_bst(root, val):
     if not root:
         return TreeNode(val)                     # found the empty slot
@@ -121,6 +127,7 @@ def insert_bst(root, val):
 **Delete (the three-case node with the successor swap):**
 
 ```python
+# Time: O(h), worst O(n), Space: O(h), worst O(n)
 def delete_bst(root, key):
     if not root:
         return None

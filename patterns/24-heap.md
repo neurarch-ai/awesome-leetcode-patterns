@@ -64,12 +64,13 @@ Three ideas carry most heap problems:
 **Min-heap basics, and max-heap by negating:**
 
 ```python
+# Usage idioms: push/pop are O(log n), peek h[0] is O(1), heapify is O(n)
 import heapq
 
 h = []
-heapq.heappush(h, 5)
-heapq.heappush(h, 1)
-heapq.heappush(h, 3)
+heapq.heappush(h, 5)            # O(log n)
+heapq.heappush(h, 1)            # O(log n)
+heapq.heappush(h, 3)            # O(log n)
 smallest = heapq.heappop(h)     # 1, O(log n)
 peek = h[0]                     # current minimum, O(1), do not pop
 
@@ -89,6 +90,7 @@ heapq.heapify(nums)             # O(n)
 ```python
 import heapq
 
+# Time: O(n log k), Space: O(k)
 def k_largest(nums, k):
     h = []
     for x in nums:
@@ -103,6 +105,7 @@ def k_largest(nums, k):
 ```python
 import heapq
 
+# Time: O(N log k) over N total elements, Space: O(k)
 def merge_k(lists):
     h = []
     for i, lst in enumerate(lists):
@@ -123,11 +126,14 @@ def merge_k(lists):
 ```python
 import heapq
 
+# Space: O(n) (all values held across the two heaps)
 class MedianFinder:
+    # Time: O(1)
     def __init__(self):
         self.low = []           # max-heap (store negatives) of the smaller half
         self.high = []          # min-heap of the larger half
 
+    # Time: O(log n)
     def addNum(self, num):      # LeetCode 295 requires this exact method name
         heapq.heappush(self.low, -num)
         # move the largest of low into high to keep order between the halves
@@ -136,6 +142,7 @@ class MedianFinder:
         if len(self.high) > len(self.low):
             heapq.heappush(self.low, -heapq.heappop(self.high))
 
+    # Time: O(1)
     def findMedian(self):       # LeetCode 295 requires this exact method name
         if len(self.low) > len(self.high):
             return -self.low[0]

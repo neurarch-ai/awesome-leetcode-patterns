@@ -75,6 +75,7 @@ slower.
 ```python
 import heapq
 
+# Time: O((V + E) log V), Space: O(V)
 def dijkstra(adj, src, n):                   # adj[u] = list of (v, weight)
     dist = [float('inf')] * n
     dist[src] = 0
@@ -96,6 +97,7 @@ def dijkstra(adj, src, n):                   # adj[u] = list of (v, weight)
 ```python
 from collections import deque
 
+# Time: O(V + E), Space: O(V)
 def zero_one_bfs(adj, src, n):               # adj[u] = list of (v, weight in {0,1})
     dist = [float('inf')] * n
     dist[src] = 0
@@ -115,6 +117,7 @@ def zero_one_bfs(adj, src, n):               # adj[u] = list of (v, weight in {0
 **Bellman-Ford capped at k+1 relaxations (cheapest flights within k stops):**
 
 ```python
+# Time: O(k * E), Space: O(V)
 def cheapest_flight(n, flights, src, dst, k):
     dist = [float('inf')] * n
     dist[src] = 0

@@ -54,6 +54,7 @@ space.
 **Core idioms, memorize these:**
 
 ```python
+# Time: O(1), Space: O(1) per operation
 x & (x - 1)          # clear the lowest set bit
 x & -x               # isolate the lowest set bit (value, not index)
 x & (1 << k)         # test bit k (nonzero if set)
@@ -66,6 +67,7 @@ x & (x - 1) == 0     # true iff x is a power of two (x > 0)
 **Single number (XOR cancellation):**
 
 ```python
+# Time: O(n), Space: O(1)
 def single_number(nums):
     result = 0
     for x in nums:
@@ -76,6 +78,7 @@ def single_number(nums):
 **Counting bits, popcount via Kernighan:**
 
 ```python
+# Time: O(number of set bits), Space: O(1)
 def hamming_weight(x):
     count = 0
     while x:
@@ -87,6 +90,7 @@ def hamming_weight(x):
 **Subsets by bitmask (iterate 0 .. 2^n - 1):**
 
 ```python
+# Time: O(n * 2^n), Space: O(1) auxiliary (beyond the output list)
 def subsets(nums):
     n = len(nums)
     out = []

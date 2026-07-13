@@ -68,7 +68,9 @@ predecessor you can point at. No special case for "what if I delete the head" or
 **Node definition:**
 
 ```python
+# Space: O(1)
 class ListNode:
+    # Time: O(1)
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
@@ -77,6 +79,7 @@ class ListNode:
 **Iterative reversal (prev / curr / next):**
 
 ```python
+# Time: O(n), Space: O(1)
 def reverse_list(head):
     prev, curr = None, head
     while curr:
@@ -90,6 +93,7 @@ def reverse_list(head):
 **Fast and slow: middle, cycle detection, and cycle start:**
 
 ```python
+# Time: O(n), Space: O(1)
 def middle(head):
     slow = fast = head
     while fast and fast.next:
@@ -97,6 +101,7 @@ def middle(head):
         fast = fast.next.next
     return slow             # on even length, this is the second middle
 
+# Time: O(n), Space: O(1)
 def has_cycle(head):
     slow = fast = head
     while fast and fast.next:
@@ -105,6 +110,7 @@ def has_cycle(head):
             return True
     return False
 
+# Time: O(n), Space: O(1)
 def cycle_start(head):
     slow = fast = head
     while fast and fast.next:
@@ -120,6 +126,7 @@ def cycle_start(head):
 **Dummy head + merge two sorted lists (the pattern that shows why dummy helps):**
 
 ```python
+# Time: O(n + m), Space: O(1)
 def merge_two_lists(a, b):
     dummy = ListNode()
     tail = dummy

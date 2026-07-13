@@ -52,6 +52,7 @@ scanning ahead.
 **Opposite ends (converging):**
 
 ```python
+# Time: O(n), Space: O(1)
 def two_sum_sorted(a, target):
     left, right = 0, len(a) - 1
     while left < right:
@@ -68,6 +69,7 @@ def two_sum_sorted(a, target):
 **Read-write (fast-slow in one direction), remove duplicates from a sorted array:**
 
 ```python
+# Time: O(n), Space: O(1)
 def remove_duplicates(a):
     if not a:
         return 0

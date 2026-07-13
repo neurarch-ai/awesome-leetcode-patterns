@@ -86,6 +86,7 @@ visible at each level so `getMin` is O(1).
 **Monotonic stack, next greater element (returns index of next greater, or -1):**
 
 ```python
+# Time: O(n), Space: O(n)
 def next_greater(nums):
     n = len(nums)
     ans = [-1] * n
@@ -100,6 +101,7 @@ def next_greater(nums):
 **Largest rectangle in histogram (increasing stack, sentinel flush):**
 
 ```python
+# Time: O(n), Space: O(n)
 def largest_rectangle(heights):
     stack = []                      # indices, heights increasing
     best = 0
@@ -118,6 +120,7 @@ def largest_rectangle(heights):
 ```python
 from collections import deque
 
+# Time: O(n), Space: O(k)
 def max_sliding_window(nums, k):
     dq = deque()                    # indices, values decreasing
     out = []
@@ -135,6 +138,7 @@ def max_sliding_window(nums, k):
 **Stack parsing, valid parentheses:**
 
 ```python
+# Time: O(n), Space: O(n)
 def is_valid(s):
     match = {')': '(', ']': '[', '}': '{'}
     stack = []

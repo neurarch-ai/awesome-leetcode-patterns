@@ -61,6 +61,7 @@ exploit for multi-level sorts) and adaptive (near-sorted input runs close to O(n
 ```python
 from collections import Counter
 
+# Time: O(n log n), Space: O(n)
 def sort_by_frequency(nums):
     freq = Counter(nums)
     # most frequent first; break ties by smaller value
@@ -72,6 +73,7 @@ def sort_by_frequency(nums):
 ```python
 from functools import cmp_to_key
 
+# Time: O(n log n), Space: O(n)
 def largest_number(nums):
     strs = list(map(str, nums))
     # a should come before b if a+b is the larger concatenation
@@ -89,6 +91,7 @@ def largest_number(nums):
 **Sort then scan (merge overlapping intervals):**
 
 ```python
+# Time: O(n log n), Space: O(n)
 def merge_intervals(intervals):
     intervals.sort(key=lambda iv: iv[0])          # by start
     merged = []
@@ -103,6 +106,7 @@ def merge_intervals(intervals):
 **Counting / bucket sort for a bounded value range (O(n + k)):**
 
 ```python
+# Time: O(n + k), Space: O(k)  (k = max_val + 1, the value range)
 def counting_sort(nums, max_val):
     count = [0] * (max_val + 1)
     for x in nums:

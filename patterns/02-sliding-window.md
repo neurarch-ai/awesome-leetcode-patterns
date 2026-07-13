@@ -53,6 +53,7 @@ running sum (for numbers).
 **Variable-size, "longest window that stays valid":**
 
 ```python
+# Time: O(n), Space: O(k) for the count map (k = distinct chars in the window, bounded by the alphabet)
 def longest_valid_window(s):
     from collections import defaultdict
     count = defaultdict(int)
@@ -72,6 +73,7 @@ def longest_valid_window(s):
 **Variable-size, "shortest window that reaches a target" (minimize):**
 
 ```python
+# Time: O(n), Space: O(1)
 def min_subarray_len(target, nums):
     left = 0
     window_sum = 0
@@ -88,6 +90,7 @@ def min_subarray_len(target, nums):
 **Fixed-size window of width k:**
 
 ```python
+# Time: O(n), Space: O(1)
 def max_sum_k(nums, k):
     window_sum = sum(nums[:k])
     best = window_sum
