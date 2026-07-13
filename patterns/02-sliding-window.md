@@ -33,6 +33,18 @@ the window **violates** the constraint, shrink from `left` until it is valid
 again. Every element enters the window once and leaves at most once, so total work
 is O(n) even though the window size varies.
 
+```mermaid
+graph LR
+  A0["a0"] --> L["left"]
+  L --> W1["a2"]
+  W1 --> W2["a3"]
+  W2 --> R["right"]
+  R --> A5["a5"]
+  A5 --> A6["a6"]
+```
+
+*The window spans left..right. Expand by moving right, contract by moving left.*
+
 Two flavors:
 
 - **Variable-size window** (most common): grow right, shrink left to restore

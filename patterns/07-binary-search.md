@@ -39,6 +39,16 @@ it until one candidate remains. Each comparison is a **provably safe elimination
 after looking at the middle, you discard the half that cannot contain the answer,
 so `log2(n)` steps suffice.
 
+```mermaid
+graph LR
+  LO["lo"] --> D1["discard this half"]
+  D1 --> MID["mid"]
+  MID --> KEEP["keep and recurse"]
+  KEEP --> HI["hi"]
+```
+
+*Each step compares against mid and discards the half that cannot hold the answer.*
+
 The trap is not the concept, it is the boundary bookkeeping: inclusive vs exclusive
 ends, `mid` rounding down, and whether the loop ends with `lo == hi` or `lo > hi`.
 The cure is to fix one invariant and never deviate. For the leftmost/lower-bound

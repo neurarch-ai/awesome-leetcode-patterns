@@ -24,6 +24,9 @@ One per family, chosen to be the canonical teaching problem for its pattern:
 | [Subsets (78)](subsets.md) | Backtracking: choose, explore, unchoose | Backtracking |
 | [Coin Change (322)](coin-change.md) | DP: state, transition, base case; recursion to tabulation | Dynamic programming |
 | [Meeting Rooms II (253)](meeting-rooms-ii.md) | Intervals plus a heap: max concurrent meetings | Heaps and intervals |
+| [Two Sum (1)](two-sum.md) | Hashing: complement lookup in O(1) | Arrays and strings |
+| [Reverse Linked List (206)](reverse-linked-list.md) | In-place pointer reversal (prev/curr/next) | Linked lists |
+| [Course Schedule (207)](course-schedule.md) | Topological sort, cycle detection via Kahn | Graphs |
 
 ## How to use them
 

@@ -10,6 +10,18 @@ two indices that move under a rule. It is the first pattern to reach for on arra
 and strings, and it is the base that sliding window and fast-slow pointers build
 on.
 
+```mermaid
+graph LR
+  L["left ->"] --> A2["2"]
+  A2 --> A3["3"]
+  A3 --> A5["5"]
+  A5 --> A7["7"]
+  A7 --> A8["8"]
+  A8 --> R["<- right"]
+```
+
+*Two pointers start at both ends of a sorted array and move inward toward the target.*
+
 ## The signal
 
 Reach for two pointers when you see:

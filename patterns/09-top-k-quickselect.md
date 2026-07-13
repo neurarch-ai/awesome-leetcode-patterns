@@ -39,6 +39,14 @@ you discard one side each step, the expected work is `n + n/2 + n/4 + ... = O(n)
 not `O(n log n)`. The worst case is O(n^2) on adversarial pivots, defused by
 picking a random pivot (or median-of-medians for a guaranteed O(n)).
 
+```mermaid
+graph LR
+  LESS["elements < pivot"] --> P["pivot"]
+  P --> GREATER["elements > pivot"]
+```
+
+*Partition splits the array around a pivot, then quickselect recurses into one side only.*
+
 **Bounded heap** keeps a min-heap of size k while scanning. For "k largest", push
 each element and pop the smallest whenever the heap exceeds k, so the heap always
 holds the k biggest seen so far and its root is the k-th largest. Each push/pop is
