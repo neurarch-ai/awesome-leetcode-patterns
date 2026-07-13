@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="718" height="298" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <text x="130" y="40" fill="#1e293b" font-size="13" text-anchor="middle" font-weight="600">graph</text>
+  <g stroke="#94a3b8" stroke-width="1.5">
+    <line x1="80" y1="95" x2="180" y2="95"/><line x1="80" y1="95" x2="80" y2="190"/><line x1="180" y1="95" x2="180" y2="190"/><line x1="80" y1="190" x2="180" y2="190"/>
+  </g>
+  <g stroke="#94a3b8">
+    <circle cx="80" cy="95" r="18" fill="#f1f5f9"/><circle cx="180" cy="95" r="18" fill="#f1f5f9"/><circle cx="80" cy="190" r="18" fill="#f1f5f9"/><circle cx="180" cy="190" r="18" fill="#f1f5f9"/>
+  </g>
+  <g fill="#1e293b" font-size="15" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="80" y="100">0</text><text x="180" y="100">1</text><text x="80" y="195">2</text><text x="180" y="195">3</text>
+  </g>
+
+  <text x="345" y="40" fill="#1e293b" font-size="13" text-anchor="middle" font-weight="600">adjacency list</text>
+  <g fill="#1e293b" font-size="14" font-family="ui-monospace,Menlo,monospace">
+    <text x="275" y="82">0: 1, 2</text><text x="275" y="112">1: 0, 3</text><text x="275" y="142">2: 0, 3</text><text x="275" y="172">3: 1, 2</text>
+  </g>
+
+  <text x="595" y="40" fill="#1e293b" font-size="13" text-anchor="middle" font-weight="600">adjacency matrix</text>
+  <g fill="#94a3b8" font-size="11" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="546" y="63">0</text><text x="574" y="63">1</text><text x="602" y="63">2</text><text x="630" y="63">3</text>
+    <text x="520" y="87">0</text><text x="520" y="115">1</text><text x="520" y="143">2</text><text x="520" y="171">3</text>
+  </g>
+  <g stroke="#94a3b8" fill="#f1f5f9">
+    <rect x="532" y="70" width="28" height="28"/><rect x="560" y="70" width="28" height="28"/><rect x="588" y="70" width="28" height="28"/><rect x="616" y="70" width="28" height="28"/>
+    <rect x="532" y="98" width="28" height="28"/><rect x="560" y="98" width="28" height="28"/><rect x="588" y="98" width="28" height="28"/><rect x="616" y="98" width="28" height="28"/>
+    <rect x="532" y="126" width="28" height="28"/><rect x="560" y="126" width="28" height="28"/><rect x="588" y="126" width="28" height="28"/><rect x="616" y="126" width="28" height="28"/>
+    <rect x="532" y="154" width="28" height="28"/><rect x="560" y="154" width="28" height="28"/><rect x="588" y="154" width="28" height="28"/><rect x="616" y="154" width="28" height="28"/>
+  </g>
+  <g font-size="13" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="546" y="89" fill="#cbd5e1">0</text><text x="574" y="89" fill="#2563eb" font-weight="700">1</text><text x="602" y="89" fill="#2563eb" font-weight="700">1</text><text x="630" y="89" fill="#cbd5e1">0</text>
+    <text x="546" y="117" fill="#2563eb" font-weight="700">1</text><text x="574" y="117" fill="#cbd5e1">0</text><text x="602" y="117" fill="#cbd5e1">0</text><text x="630" y="117" fill="#2563eb" font-weight="700">1</text>
+    <text x="546" y="145" fill="#2563eb" font-weight="700">1</text><text x="574" y="145" fill="#cbd5e1">0</text><text x="602" y="145" fill="#cbd5e1">0</text><text x="630" y="145" fill="#2563eb" font-weight="700">1</text>
+    <text x="546" y="173" fill="#cbd5e1">0</text><text x="574" y="173" fill="#2563eb" font-weight="700">1</text><text x="602" y="173" fill="#2563eb" font-weight="700">1</text><text x="630" y="173" fill="#cbd5e1">0</text>
+  </g>
+
+  <text x="360" y="270" fill="#475569" font-size="12.5" text-anchor="middle">list: O(V + E) space, best for sparse graphs. matrix: O(V^2) space, O(1) edge lookup.</text>
+</svg>

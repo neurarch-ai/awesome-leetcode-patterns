@@ -12,6 +12,10 @@ after day `i` to get a warmer temperature. If no future day is warmer, put `0`.
 Example: `temperatures = [73, 74, 75, 71, 69, 72, 76, 73]` returns
 `[1, 1, 4, 2, 1, 1, 0, 0]`.
 
+![A monotonic stack of unresolved indices](../assets/stacks.svg)
+
+*A monotonic stack of unresolved indices. See the full pattern in the linked file below.*
+
 ## 1. Clarify and restate
 
 Questions before coding:

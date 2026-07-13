@@ -13,6 +13,10 @@ Example: `intervals = [[0, 30], [5, 10], [15, 20]]` returns `2`. The meeting
 `[0, 30]` overlaps both others, but `[5, 10]` and `[15, 20]` do not overlap each
 other, so two rooms suffice.
 
+![Intervals on a timeline](../assets/intervals.svg)
+
+*Intervals on a timeline. See the full pattern in the linked file below.*
+
 ## 1. Clarify and restate
 
 Questions I would ask before touching code:

@@ -12,6 +12,10 @@ contain duplicate subsets, and you may return the subsets in any order.
 Example: `nums = [1, 2, 3]` returns
 `[[], [1], [2], [3], [1,2], [1,3], [2,3], [1,2,3]]` (any order).
 
+![The choose/skip decision tree](../assets/backtracking.svg)
+
+*The choose/skip decision tree. See the full pattern in the linked file below.*
+
 ## 1. Clarify and restate
 
 Questions I would ask before touching code:

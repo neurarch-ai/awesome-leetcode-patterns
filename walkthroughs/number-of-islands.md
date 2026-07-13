@@ -18,6 +18,10 @@ Example: the grid
 ```
 has `3` islands.
 
+![Grid traversal, one flood per island](../assets/graph-traversal.svg)
+
+*Grid traversal, one flood per island. See the full pattern in the linked file below.*
+
 ## 1. Clarify and restate
 
 Questions before coding:

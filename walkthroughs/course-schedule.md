@@ -14,6 +14,10 @@ Example: `numCourses = 2`, `prerequisites = [[1, 0]]` returns `True` (take 0, th
 1). But `numCourses = 2`, `prerequisites = [[1, 0], [0, 1]]` returns `False`, since
 each course requires the other.
 
+![Topological order of a DAG](../assets/topological-sort.svg)
+
+*Topological order of a DAG. See the full pattern in the linked file below.*
+
 ## 1. Clarify and restate
 
 The questions I would ask:

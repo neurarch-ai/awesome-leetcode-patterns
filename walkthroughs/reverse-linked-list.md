@@ -11,6 +11,10 @@ points at `None`.
 
 Example: `1 -> 2 -> 3 -> 4 -> 5` becomes `5 -> 4 -> 3 -> 2 -> 1`.
 
+![In-place pointer reversal](../assets/linked-list.svg)
+
+*In-place pointer reversal. See the full pattern in the linked file below.*
+
 ## 1. Clarify and restate
 
 The questions I would ask:

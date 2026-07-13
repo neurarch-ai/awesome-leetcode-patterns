@@ -14,6 +14,10 @@ smallest integer speed `k` that lets her finish all the piles within `h` hours.
 
 Example: `piles = [3, 6, 7, 11]`, `h = 8` returns `4`.
 
+![Binary search on the answer](../assets/binary-search.svg)
+
+*Binary search on the answer. See the full pattern in the linked file below.*
+
 ## 1. Clarify and restate
 
 The questions I would ask:

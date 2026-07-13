@@ -7,6 +7,10 @@ connectivity problem. The single most important decision is how you store the ed
 adjacency list or adjacency matrix, because it fixes the cost of every traversal you
 run on top.
 
+![A graph with its adjacency list and adjacency matrix](../assets/graph.svg)
+
+*The same graph as an adjacency list (O(V + E) space, best for sparse) and an adjacency matrix (O(V^2) space, O(1) edge lookup).*
+
 ## What it is
 
 A graph is a set of **vertices** V and a set of **edges** E, where each edge joins

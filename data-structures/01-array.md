@@ -8,6 +8,10 @@ sits on top of it, so knowing precisely which of its operations are O(1) and whi
 secretly shift the whole thing is the difference between an O(n) and an O(n^2)
 solution.
 
+![An array of cells with O(1) indexing](../assets/array.svg)
+
+*Contiguous cells: a[i] is a direct address computation, so indexing is O(1) and append is amortized O(1).*
+
 ## What it is
 
 A static array is a fixed-size, contiguous run of memory. You pick the length up

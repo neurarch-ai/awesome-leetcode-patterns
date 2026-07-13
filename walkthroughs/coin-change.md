@@ -13,6 +13,10 @@ combination of the coins, return `-1`. You have an unlimited supply of each coin
 
 Example: `coins = [1, 2, 5]`, `amount = 11` returns `3` (11 = 5 + 5 + 1).
 
+![Dynamic programming over a 1D choice](../assets/dp-linear.svg)
+
+*Dynamic programming over a 1D choice. See the full pattern in the linked file below.*
+
 ## 1. Clarify and restate
 
 Questions I would ask before touching code:

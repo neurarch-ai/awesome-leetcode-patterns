@@ -13,6 +13,10 @@ coming from different positions count separately.
 Example: `nums = [1, 1, 1]`, `k = 2` returns `2` (the subarray `[1, 1]` at
 indices `0..1` and the one at indices `1..2`).
 
+![Prefix sums stored in a hash map](../assets/prefix-sum.svg)
+
+*Prefix sums stored in a hash map. See the full pattern in the linked file below.*
+
 ## 1. Clarify and restate
 
 Before touching code, the questions I would ask out loud:

@@ -9,6 +9,10 @@ inserts and deletes in O(log n). This is the tool for dynamic order statistics a
 range counts when you do not need the arbitrary range aggregates that a
 [segment tree](../patterns/29-segment-tree-fenwick.md) provides.
 
+![Inserting into a sorted array at the bisect position](../assets/sorted-container.svg)
+
+*A sorted container keeps order as values arrive: bisect finds the slot in O(log n), SortedList inserts there in O(log n).*
+
 ## What it is
 
 - **`bisect`** performs binary search on a sorted Python list. `bisect_left(a, x)`

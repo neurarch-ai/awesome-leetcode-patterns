@@ -13,6 +13,10 @@ indices in any order.
 Example: `nums = [2, 7, 11, 15]`, `target = 9` returns `[0, 1]` because
 `nums[0] + nums[1] = 2 + 7 = 9`.
 
+![Complement lookup in a hash map](../assets/hashing.svg)
+
+*Complement lookup in a hash map. See the full pattern in the linked file below.*
+
 ## 1. Clarify and restate
 
 The questions I would ask:

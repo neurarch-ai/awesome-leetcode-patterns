@@ -8,6 +8,10 @@ a perfect stack and a terrible queue, because dequeuing from the front is O(n).
 `collections.deque` fixes that by being O(1) at both ends. Getting this right is
 the difference between an O(n) BFS and an O(n^2) one.
 
+![A stack (LIFO) and a queue or deque (FIFO)](../assets/stack-queue.svg)
+
+*A stack pushes and pops at one end; a deque is O(1) at both ends, which is why it is the right BFS queue.*
+
 ## What it is
 
 A stack is a LIFO container: you push onto the top and pop from the top, and both
