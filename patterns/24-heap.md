@@ -124,7 +124,7 @@ class MedianFinder:
         self.low = []           # max-heap (store negatives) of the smaller half
         self.high = []          # min-heap of the larger half
 
-    def add(self, num):
+    def addNum(self, num):      # LeetCode 295 requires this exact method name
         heapq.heappush(self.low, -num)
         # move the largest of low into high to keep order between the halves
         heapq.heappush(self.high, -heapq.heappop(self.low))
@@ -132,7 +132,7 @@ class MedianFinder:
         if len(self.high) > len(self.low):
             heapq.heappush(self.low, -heapq.heappop(self.high))
 
-    def median(self):
+    def findMedian(self):       # LeetCode 295 requires this exact method name
         if len(self.low) > len(self.high):
             return -self.low[0]
         return (-self.low[0] + self.high[0]) / 2

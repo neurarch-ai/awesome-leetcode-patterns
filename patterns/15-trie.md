@@ -96,7 +96,7 @@ class Trie:
         node = self._walk(word)
         return node is not None and node.is_word
 
-    def starts_with(self, prefix):
+    def startsWith(self, prefix):   # LeetCode 208 requires this exact method name
         return self._walk(prefix) is not None
 
     def _walk(self, s):
