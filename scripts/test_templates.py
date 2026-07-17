@@ -277,6 +277,13 @@ T("30.max_profit_cooldown", lambda: n["max_profit_cooldown"]([1, 2, 3, 0, 2]) ==
 T("30.max_profit_fee", lambda: n["max_profit_fee"]([1, 3, 2, 8, 4, 9], 2) == 8)
 
 
+n = load(P + "31-string-matching.md")
+T("31.build_lps", lambda: n["build_lps"]("ababc") == [0, 0, 1, 2, 0])
+T("31.kmp_search", lambda: n["kmp_search"]("mississippi", "issip") == 4 and n["kmp_search"]("abc", "xyz") == -1)
+T("31.rabin_karp", lambda: n["rabin_karp"]("sadbutsad", "sad") == 0 and n["rabin_karp"]("leetcode", "leeto") == -1)
+T("31.repeated_substring", lambda: n["repeated_substring"]("abab") is True and n["repeated_substring"]("aba") is False)
+
+
 if fails:
     print(f"FAIL: {len(fails)} of {ran} template checks failed\n")
     for f in fails:

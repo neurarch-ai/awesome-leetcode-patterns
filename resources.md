@@ -13,10 +13,14 @@ point: a problem you cannot classify is a pattern you have not learned yet.
 | **Grind 75** | 75 (tunable) | A first pass. Sortable by time budget and difficulty, ordered so early problems teach prerequisites for later ones. | [techinterviewhandbook.org/grind75](https://www.techinterviewhandbook.org/grind75/) |
 | **Blind 75** | 75 | The classic minimum set, grouped by topic. Terser than Grind 75, assumes you fill gaps yourself. | [neetcode.io/practice (Blind 75 tab)](https://neetcode.io/practice) |
 | **NeetCode 150** | 150 | Blind 75 plus 75 more for fuller coverage, with video walkthroughs per problem. The most complete single list. | [neetcode.io/practice](https://neetcode.io/practice) |
+| **LeetCode 75** | 75 | LeetCode's own current official plan, kept in the app with progress tracking. A good modern first pass. | [leetcode.com/studyplan/leetcode-75](https://leetcode.com/studyplan/leetcode-75/) |
+| **Top Interview 150** | 150 | LeetCode's official "must-do for interviews" plan, grouped by topic, updated to reflect the current question bank. | [leetcode.com/studyplan/top-interview-150](https://leetcode.com/studyplan/top-interview-150/) |
 
 Recommended path: **Grind 75 first** (it sequences prerequisites well), then
-**NeetCode 150** for breadth. Blind 75 is a strict subset of NeetCode 150, so if
-you do the 150 you have done the 75.
+**NeetCode 150** or LeetCode's **Top Interview 150** for breadth. Blind 75 is a
+strict subset of NeetCode 150, so if you do the 150 you have done the 75. The two
+LeetCode plans (LeetCode 75, Top Interview 150) are the current official lists and
+track your progress in the app, which is why they are worth doing there.
 
 > Prefer to drill our own patterns on a schedule? The [study plan](study-plan.md)
 > is an eight-week, prerequisite-ordered sequence built from the canonical problems
@@ -52,6 +56,7 @@ file that explains it:
 | Math and Geometry | [27 math](patterns/27-math.md) |
 | Bit Manipulation | [26 bit manipulation](patterns/26-bit-manipulation.md) |
 | Advanced (Segment Tree / BIT, range queries) | [29 segment tree and Fenwick](patterns/29-segment-tree-fenwick.md) |
+| Strings (substring search, KMP, rolling hash) | [31 string matching](patterns/31-string-matching.md) |
 
 Two of our families do not have a dedicated list section but show up throughout:
 [08 sorting](patterns/08-sorting.md) (a prerequisite for intervals, greedy, and

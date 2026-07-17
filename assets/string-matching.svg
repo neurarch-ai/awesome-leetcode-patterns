@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif">
+  <rect x="1" y="1" width="518" height="198" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+  <g fill="#94a3b8" font-size="12" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="156" y="46">0</text><text x="208" y="46">1</text><text x="260" y="46">2</text><text x="312" y="46">3</text><text x="364" y="46">4</text>
+  </g>
+  <text x="120" y="82" fill="#94a3b8" font-size="12" text-anchor="end">pattern</text>
+  <g stroke="#94a3b8" fill="#f1f5f9">
+    <rect x="130" y="56" width="52" height="46"/><rect x="182" y="56" width="52" height="46"/><rect x="234" y="56" width="52" height="46"/><rect x="286" y="56" width="52" height="46"/><rect x="338" y="56" width="52" height="46"/>
+  </g>
+  <g fill="#1e293b" font-size="20" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="156" y="86">a</text><text x="208" y="86">b</text><text x="260" y="86">a</text><text x="312" y="86">b</text><text x="364" y="86">c</text>
+  </g>
+  <text x="120" y="137" fill="#94a3b8" font-size="12" text-anchor="end">lps</text>
+  <g stroke="#94a3b8" fill="#f1f5f9">
+    <rect x="130" y="112" width="52" height="40"/><rect x="182" y="112" width="52" height="40"/><rect x="234" y="112" width="52" height="40"/><rect x="286" y="112" width="52" height="40" fill="#fde68a" stroke="#d97706"/><rect x="338" y="112" width="52" height="40"/>
+  </g>
+  <g fill="#1e293b" font-size="18" text-anchor="middle" font-family="ui-monospace,Menlo,monospace">
+    <text x="156" y="139">0</text><text x="208" y="139">0</text><text x="260" y="139">1</text><text x="312" y="139">2</text><text x="364" y="139">0</text>
+  </g>
+  <text x="260" y="182" fill="#475569" font-size="12" text-anchor="middle">lps[3] = 2: prefix "ab" equals the suffix ending here, so a mismatch falls back to lps[k-1]</text>
+</svg>

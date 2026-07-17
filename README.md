@@ -3,7 +3,7 @@
 A pattern-first guide to the coding interview. LeetCode has thousands of
 problems, but they are assembled from a small number of reusable patterns. Once
 you can name the pattern, most "new" problems collapse into one you have already
-solved. Grinding problem count is the slow path. Learning the ~30 patterns below,
+solved. Grinding problem count is the slow path. Learning the ~31 patterns below,
 and drilling how to *recognize* each one from the problem statement, is the fast
 one.
 
@@ -19,7 +19,7 @@ variations, and the mistakes that cost people the offer.
 
 ![Two pointers converging on a sorted array](assets/two-pointers.svg)
 
-*Every one of the 30 patterns comes with a figure like this, plus a memorizable
+*Every one of the 31 patterns comes with a figure like this, plus a memorizable
 code template annotated with its time and space complexity.*
 
 ---
@@ -127,14 +127,15 @@ running total, or a hash map.*
 | 27 | [Math and number theory](patterns/27-math.md) | GCD, primes, modular arithmetic, combinatorics, digit problems |
 | 28 | [Design](patterns/28-design.md) | Build a data structure to a spec: LRU, min stack, iterators, rate limiter |
 
-### Advanced structures and DP
-*The tools for harder rounds: dynamic range queries, and DP where the state is a
-mode you move between.*
+### Advanced structures and algorithms
+*The tools for harder rounds: dynamic range queries, DP where the state is a mode
+you move between, and string matching.*
 
 | # | Pattern | When to reach for it |
 |---|---------|----------------------|
 | 29 | [Segment tree and Fenwick (BIT)](patterns/29-segment-tree-fenwick.md) | Range query with updates, count of smaller, inversions, reverse pairs |
 | 30 | [State-machine DP (stock series)](patterns/30-state-machine-dp.md) | Buy/sell stock variants, cooldown, fee, at most k transactions; a few modes with transitions |
+| 31 | [String matching (KMP and rolling hash)](patterns/31-string-matching.md) | Substring search when O(n*m) is too slow, periodicity, repeated or duplicate substrings, shortest palindrome |
 
 ---
 

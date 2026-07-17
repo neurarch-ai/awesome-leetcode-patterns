@@ -48,6 +48,9 @@ and most problems announce their pattern in the first sentence.
   overlapping subproblems, think [dynamic programming](patterns/21-dp-linear-knapsack.md).
 - If at each step you are in **one of a few modes** (holding, cooldown), think
   [state-machine DP](patterns/30-state-machine-dp.md).
+- If it asks to **find a pattern in a text**, test **periodicity**, or find a
+  **repeated or duplicate substring**, think
+  [string matching (KMP, rolling hash)](patterns/31-string-matching.md).
 - If you must solve **in place with O(1) space**, think swapping, or encoding two
   values in one slot (store `a + b * k`, recover with `% k` and `// k`).
 - If it involves **overlapping intervals**, think
@@ -102,6 +105,7 @@ and most problems announce their pattern in the first sentence.
 | "range sum with updates", "count of smaller", "inversions", "reverse pairs" | Fenwick / segment tree | [29](patterns/29-segment-tree-fenwick.md) |
 | "buy/sell stock", "at most k transactions", "cooldown", "with a fee" | State-machine DP | [30](patterns/30-state-machine-dp.md) |
 | "kth smallest as it changes", "sliding window median", "count in a range dynamically" | Sorted container (bisect / SortedList) | [ds](data-structures/10-sorted-container.md) |
+| "find pattern in text", "repeated substring", "shortest palindrome", "longest duplicate substring" | KMP / rolling hash | [31](patterns/31-string-matching.md) |
 
 ## By constraint on n
 
