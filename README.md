@@ -1,5 +1,7 @@
 # LeetCode Patterns
 
+> 简体中文版:[zh/](zh/README.md)
+
 A pattern-first guide to the coding interview. LeetCode has thousands of
 problems, but they are assembled from a small number of reusable patterns. Once
 you can name the pattern, most "new" problems collapse into one you have already
