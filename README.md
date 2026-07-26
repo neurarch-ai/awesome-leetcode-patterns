@@ -28,7 +28,7 @@ code template annotated with its time and space complexity.*
 
 ## How to use this repo
 
-1. **Read the [solving framework](framework/solving-framework.md) first.** It is
+1. **Read the [solving framework](framework/solving-framework.md) ([中文](zh/framework/solving-framework.md)) first.** It is
    the spine every problem hangs off: clarify, example, brute force, spot the
    bottleneck, optimize, code, test. Interviewers grade your process as much as
    your final code.
@@ -171,29 +171,31 @@ you reach for less often but must not fumble when it appears.
 The patterns are the core. These pages are the supporting reference you keep open
 alongside them:
 
-- **[Data structures](data-structures/README.md)** - the layer underneath the
+Each has a Simplified Chinese version, linked as ([中文]) after its title.
+
+- **[Data structures](data-structures/README.md)** ([中文](zh/data-structures/README.md)) - the layer underneath the
   patterns: what a heap, a trie, or a union-find actually is, what each operation
   costs, and when to reach for which. Includes a "which structure when" table.
-- **[Complexity cheat sheet](complexity.md)** - the operation costs you must know
+- **[Complexity cheat sheet](complexity.md)** ([中文](zh/complexity.md)) - the operation costs you must know
   cold for Python list, deque, set, dict, Counter, heapq, and str, plus the
   recursion-space caveat.
-- **[Glossary](glossary.md)** - the distinctions that decide which pattern you
+- **[Glossary](glossary.md)** ([中文](zh/glossary.md)) - the distinctions that decide which pattern you
   reach for: subarray vs substring vs subsequence, amortized, stable sort,
   optimal substructure, and the graph and tree vocabulary.
-- **[Study plan](study-plan.md)** - an eight-week schedule that sequences the
+- **[Study plan](study-plan.md)** ([中文](zh/study-plan.md)) - an eight-week schedule that sequences the
   patterns and specific problems in prerequisite order (arrays before trees, trees
   before graphs, recursion before DP), tunable to your timeline. Start here if you
   want a plan, not just a map.
-- **[Curated problem lists](resources.md)** - Grind 75, Blind 75, and NeetCode
+- **[Curated problem lists](resources.md)** ([中文](zh/resources.md)) - Grind 75, Blind 75, and NeetCode
   150, each mapped back to the patterns here, plus a study routine and external
   cheat sheets worth bookmarking.
-- **[Edge-case checklist](edge-cases.md)** - the empty, single, duplicate,
+- **[Edge-case checklist](edge-cases.md)** ([中文](zh/edge-cases.md)) - the empty, single, duplicate,
   negative, and overflow cases interviewers hunt for, as a checklist to run before
   and after you code. More offers are lost here than to the wrong pattern.
-- **[Worked-example walkthroughs](walkthroughs/README.md)** - seven canonical
+- **[Worked-example walkthroughs](walkthroughs/README.md)** ([中文](zh/walkthroughs/README.md)) - ten canonical
   problems solved end to end with the six-step framework, so you can watch a
   pattern get picked and applied, not just read the finished code.
-- **[DP sub-pattern map](patterns/dp-patterns.md)** - the eleven recurring shapes
+- **[DP sub-pattern map](patterns/dp-patterns.md)** ([中文](zh/patterns/dp-patterns.md)) - the eleven recurring shapes
   of dynamic programming (linear, knapsack, two-sequence, grid, interval, bitmask,
   state-machine, tree, digit, probability), each with its state and transition, so
   you can name the shape and get the recurrence.
